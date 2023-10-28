@@ -45,7 +45,16 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.container}>
-        <h1>HELLO</h1>
+        <section>
+          <h1>
+            Building the future of small retail{" "}
+            <span className="text-gradient">with the power of data</span>
+          </h1>
+          <p>
+            Revealing what billions of consumers buy so the right <br />
+            inventory can be ordered, stocked, positioned and delivered
+          </p>
+        </section>
       </div>
     </aside>
   );

@@ -6,13 +6,15 @@
   align-items: center;
   background: url("../../assets//hero-bg.jpg") no-repeat center center fixed;
   background-size: cover;
-  filter: brightness(0.6);
 }
 
 .container {
-  width: 80%;
+  width: 50%;
   max-width: 1450px;
   margin: 0 auto;
+}
+
+.container section {
   position: relative;
 }
 
@@ -35,6 +37,32 @@ img {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(90deg, #1e0e60a7 0%, #066399bd 100%);
+  filter: brightness(0.6);
+}
+
+h1 {
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.96%;
+  width: 700px;
+  max-width: 60vw;
+  position: relative;
+}
+
+p {
+  position: absolute;
+  width: 600px;
+  max-width: 50vw;
+  left: 100px;
+  bottom: -10vh;
+  color: var(--text-white);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .grids {
@@ -204,6 +232,31 @@ img {
   .img-background {
     height: 100vh;
     width: 100vw;
+  }
+
+  .container {
+    width: 70vw;
+  }
+
+  .container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 80vw;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+    position: static;
+    max-width: 65vw;
   }
 
   img {
