@@ -50,7 +50,7 @@ export default function Hero() {
             Building the future of small retail{" "}
             <span className="text-gradient">with the power of data</span>
           </h1>
-          <p>
+          <p className={styles.text}>
             Revealing what billions of consumers buy so the right <br />
             inventory can be ordered, stocked, positioned and delivered
           </p>
