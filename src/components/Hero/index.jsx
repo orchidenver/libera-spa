@@ -1,8 +1,10 @@
+import { useNav } from "../../hooks/useNav";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
+  const homePageRef = useNav("home");
   return (
-    <aside className={styles.hero}>
+    <aside className={styles.hero} id="homeSection" ref={homePageRef}>
       <div className={styles["hero-bg"]}></div>
       <div className={styles["hero-overlay"]}>
         <div className={styles.grids}>

@@ -1,10 +1,13 @@
+import { useNav } from "../../hooks/useNav";
 import Card from "./Card";
 import { TEAM } from "../../utils/data";
 import styles from "./OurTeam.module.css";
 
 export default function OurTeam() {
+  const ourTeamRef = useNav("our team");
+
   return (
-    <section id="#ourteam" className={styles.ourteam}>
+    <section id="ourteamSection" className={styles.ourteam} ref={ourTeamRef}>
       <div className={styles.container}>
         <h3 className={styles["team__header"]}>our team</h3>
         <p className={styles["team__description"]}>

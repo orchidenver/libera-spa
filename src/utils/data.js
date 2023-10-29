@@ -31,4 +31,6 @@ export const TEAM = [
         position: "Head of Engineering",
         link: "www.linkedin.com"
     }
-]
+];
+
+export const navLinks = ["home", "our flow", "libera app ", "what we do", "our mission", "our team", "our investors", "contacts"];

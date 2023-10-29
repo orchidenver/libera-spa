@@ -32,6 +32,7 @@ header {
   margin-left: 10vw;
   position: relative;
   z-index: 12;
+  cursor: pointer;
 }
 
 .navigation {
@@ -59,6 +60,7 @@ header {
   text-decoration: none;
   width: 120px;
   transition: all 1s ease;
+  display: block;
 }
 
 .nav_link:hover {
