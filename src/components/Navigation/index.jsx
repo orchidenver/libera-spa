@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
+import Link from "./Link";
 import styles from "./Navigation.module.css";
 import logo from "../../assets/logo.svg";
 import fb from "../../assets/fb-icon.svg";
@@ -8,7 +10,7 @@ import x from "../../assets/x-icon.svg";
 import mail from "../../assets/mail-icon.svg";
 import li from "../../assets/li-icon.svg";
 
-export default function Navigation() {
+export default function Navigation({ selectedPage, setSelectedPage }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [burgerMenuClass, setBurgerMenuClass] = useState(
     `${styles["burger-bar"]} ${styles.unclicked}`
@@ -26,19 +28,67 @@ export default function Navigation() {
 
   return (
     <header>
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" className={styles.logo} />
       <nav
         className={`${styles.menu} ${mobileMenuOpen ? activeMenuStyles : ""}`}
       >
         <ul className={styles.navigation}>
-          <li className={styles.nav_link}>home</li>
-          <li className={styles.nav_link}>our flow</li>
-          <li className={styles.nav_link}>libera app</li>
-          <li className={styles.nav_link}>what we do</li>
-          <li className={styles.nav_link}>our mission</li>
-          <li className={styles.nav_link}>our team</li>
-          <li className={styles.nav_link}>our investors</li>
-          <li className={styles.nav_link}>contacts</li>
+          <li className={styles.nav_link}>
+            <Link
+              page="home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="our flow"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="libera app"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="what we do"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="our mission"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="our team"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="our investors"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
+          <li className={styles.nav_link}>
+            <Link
+              page="contacts"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+          </li>
         </ul>
         <ul className={styles.media}>
           <li className={styles.soc_link}>

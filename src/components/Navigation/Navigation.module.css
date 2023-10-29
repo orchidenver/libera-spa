@@ -28,7 +28,7 @@ header {
   opacity: 1;
 }
 
-img {
+.logo {
   margin-left: 10vw;
   position: relative;
   z-index: 12;
@@ -56,6 +56,29 @@ img {
   margin-top: 3vh;
   color: var(--text-white);
   cursor: pointer;
+  text-decoration: none;
+  width: 120px;
+  transition: all 1s ease;
+}
+
+.nav_link:hover {
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.active-link,
+.active-link:hover {
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 1s ease;
 }
 
 .media {
@@ -78,7 +101,7 @@ img {
 }
 
 .burger-menu {
-  position: absolute;
+  position: fixed;
   top: 2vh;
   right: 2vh;
   height: 4em;
@@ -96,6 +119,66 @@ img {
     rgba(1, 233, 248, 0.1) 100%
   );
   border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+}
+.burger-menu::before {
+  top: 0;
+  left: 0;
+  border-top-color: #01c5ff;
+  border-right-color: #01c5ff;
+  animation: border 5s infinite;
+}
+.burger-menu::after {
+  bottom: 0;
+  right: 0;
+  animation: border 5s 2.5s infinite, borderColor 5s 2.5s infinite;
+}
+
+@keyframes border {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes borderColor {
+  0% {
+    border-bottom-color: #01c5ff;
+    border-left-color: #01c5ff;
+  }
+  50% {
+    border-bottom-color: #01c5ff;
+    border-left-color: #01c5ff;
+  }
+  51% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
 }
 
 .burger-bar {
