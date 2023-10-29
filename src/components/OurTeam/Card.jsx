@@ -2,9 +2,16 @@
 import styles from "./OurTeam.module.css";
 import linkImg from "../../assets/li-icon.svg";
 
-export default function Card({ photo, name, lastName, position, link }) {
+export default function Card({
+  photo,
+  name,
+  lastName,
+  position,
+  link,
+  onClickCardHandler,
+}) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClickCardHandler}>
       <img src={photo} alt="" className={styles["card__img"]} />
       <h4 className={styles["card__title"]}>{name}</h4>
       <h4 className={styles["card__title"]}>{lastName}</h4>

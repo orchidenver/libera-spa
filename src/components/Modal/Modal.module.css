@@ -1,0 +1,18 @@
+.modal {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal::backdrop {
+  background: linear-gradient(
+    90deg,
+    rgba(21, 45, 81, 0.7) 0%,
+    rgba(43, 60, 94, 0.7) 100%
+  );
+  backdrop-filter: blur(10px);
+}
