@@ -38,4 +38,4 @@ export const TEAM = [
     }
 ];
 
-export const navLinks = ["home", "our flow", "libera app ", "what we do", "our mission", "our team", "our investors", "contacts"];
+export const navLinks = ["home", "our flow", "libera app", "what we do", "our mission", "our team", "our investors", "contacts"];

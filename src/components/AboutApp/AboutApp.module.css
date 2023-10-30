@@ -27,9 +27,9 @@
 
 .row {
   display: flex;
-  position: relative;
-  z-index: 12;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .app__info {
@@ -93,5 +93,47 @@
   .app__img {
     width: 35vw;
     height: 35vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .app {
+    display: block;
+    padding: 7vh 0;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .app__header {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .app__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .app__text {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .app__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+  }
+
+  .app__img {
+    width: auto;
+    height: 50vh;
   }
 }

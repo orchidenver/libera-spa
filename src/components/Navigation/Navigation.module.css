@@ -31,7 +31,7 @@ header {
 .logo {
   margin-left: 8vw;
   position: relative;
-  z-index: 12;
+  z-index: 999;
   cursor: pointer;
 }
 
