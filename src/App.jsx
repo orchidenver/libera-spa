@@ -5,6 +5,7 @@ import OurInvestors from "./components/OurInvestors";
 import NavProvider from "./context/NavContext";
 import AboutApp from "./components/AboutApp";
 import OurMission from "./components/OurMission";
+import Contacts from "./components/Contacts";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <OurMission />
         <OurTeam />
         <OurInvestors />
+        <Contacts />
       </NavProvider>
     </div>
   );

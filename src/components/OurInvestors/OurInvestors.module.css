@@ -40,6 +40,7 @@
   grid-template-columns: 350px 350px 350px;
   grid-template-columns: repeat(3, minmax(300px, 350px));
   row-gap: 70px;
+  position: relative;
 }
 
 .investor__img {
