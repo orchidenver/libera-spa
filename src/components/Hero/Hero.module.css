@@ -27,10 +27,6 @@
   height: auto;
 }
 
-img {
-  background-size: cover;
-}
-
 .hero-overlay {
   position: absolute;
   left: 0;
