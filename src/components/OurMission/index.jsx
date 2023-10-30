@@ -1,24 +1,20 @@
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
-import styles from "./OurOperations.module.css";
+import styles from "./OurMission.module.css";
 
-export default function OurOperations() {
-  const OperationsRef = useNav("what we do");
+export default function OurMission() {
+  const missionRef = useNav("our mission");
   const mobileSize = useMediaQuery("(max-width: 800px)");
 
   return (
-    <section
-      id="whatwedoSection"
-      className={styles.operations}
-      ref={OperationsRef}
-    >
+    <section id="ourmissionSection" className={styles.mission} ref={missionRef}>
       <div className={styles.container}>
-        <h3 className={styles["operations__header"]}>our mission</h3>
-        <p className={styles["operations__description"]}>
+        <h3 className={styles["mission__header"]}>our mission</h3>
+        <p className={styles["mission__description"]}>
           Inspired by the power of people, data, and technology
         </p>
-        <div className={styles["operations__list"]}>
-          <div className={styles["operations__item"]}>
+        <div className={styles["mission__list"]}>
+          <div className={styles["mission__item"]}>
             {!mobileSize && (
               <div className={styles.marker}>
                 <div className={styles.square}></div>
@@ -33,7 +29,7 @@ export default function OurOperations() {
               change in Emerging Asia
             </div>
           </div>
-          <div className={styles["operations__item"]}>
+          <div className={styles["mission__item"]}>
             {!mobileSize && (
               <div className={styles.marker}>
                 <div className={styles.square}></div>
@@ -48,7 +44,7 @@ export default function OurOperations() {
               has far-reaching implications for economic growth
             </div>
           </div>
-          <div className={styles["operations__item"]}>
+          <div className={styles["mission__item"]}>
             {!mobileSize && (
               <div className={styles.marker}>
                 <div className={styles.square}></div>

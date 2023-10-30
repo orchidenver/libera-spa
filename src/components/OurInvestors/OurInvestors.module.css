@@ -1,4 +1,103 @@
 .investors {
-  background-color: red;
+  padding: 10vh 0;
   height: 100vh;
+}
+
+.container {
+  width: 60%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.investors__header {
+  color: var(--text-white);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.96%; /* 73.472px */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.investors__description {
+  width: 70%;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 36px */
+  text-transform: uppercase;
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10vh;
+}
+
+.investors__grid {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-columns: repeat(3, minmax(300px, 350px));
+  row-gap: 70px;
+}
+
+.investor__img {
+  width: 80%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.investor__description {
+  text-decoration: none;
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(
+    315deg,
+    #01c4ff7b 53%,
+    #01e8f87e 88%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.investor__description:hover {
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+}
+
+@media (min-width: 1280px) and (max-width: 1536px) {
+  .investors__grid {
+    row-gap: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .investors__grid {
+    display: block;
+  }
+
+  .investors__header {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104.96%;
+    text-align: center;
+  }
+
+  .investors__description {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  .investor__img {
+    width: 100%;
+  }
+
+  .investor + .investor {
+    margin-top: 3vh;
+  }
 }

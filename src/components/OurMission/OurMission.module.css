@@ -1,4 +1,4 @@
-.operations {
+.mission {
   padding: 10vh 0;
   height: 100vh;
 }
@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 
-.operations__header {
+.mission__header {
   color: var(--text-white);
   font-size: 4rem;
   font-style: normal;
@@ -19,7 +19,7 @@
   margin-bottom: 1rem;
 }
 
-.operations__description {
+.mission__description {
   width: 70%;
   font-size: 2rem;
   font-style: normal;
@@ -35,18 +35,18 @@
   margin-bottom: 5vh;
 }
 
-.operations__list {
+.mission__list {
   display: flex;
   flex-direction: column;
 }
 
-.operations__item {
+.mission__item {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.operations__item:hover .marker {
+.mission__item:hover .marker {
   border: 1px solid #01c5ff;
   width: 29px;
   height: 29px;
@@ -54,7 +54,7 @@
   transition: all 0.5s linear;
 }
 
-.operations__item:hover .square {
+.mission__item:hover .square {
   border: 1px solid #01c5ff;
   background: #01c5ff;
   width: 9px;
@@ -62,7 +62,7 @@
   transition: all 0.5s linear;
 }
 
-.operations__item:hover .number {
+.mission__item:hover .number {
   color: #01c5ff;
   background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
   background-clip: text;
@@ -72,7 +72,7 @@
   transition: all 0.5s linear;
 }
 
-.operations__item:hover .description {
+.mission__item:hover .description {
   color: #fff;
   transition: all 0.5s linear;
 }
@@ -110,10 +110,6 @@
   line-height: 96%;
 }
 
-.number:first-child {
-  margin-left: 25px;
-}
-
 .description {
   color: #ffffff7b;
   font-size: 1.25rem;
@@ -131,20 +127,20 @@
     margin: 0 auto;
   }
 
-  .operations {
+  .mission {
     height: auto;
   }
 
-  .operations__item {
+  .mission__item {
     flex-direction: column;
     margin-top: 10vh;
   }
 
-  .operations__item + .operations__item {
+  .mission__item + .mission__item {
     margin-top: 10vh;
   }
 
-  .operations__header {
+  .mission__header {
     margin-bottom: 0;
     font-size: 2rem;
     font-style: normal;
@@ -153,14 +149,14 @@
     text-align: center;
   }
 
-  .operations__description {
+  .mission__description {
     font-size: 1rem;
     text-align: center;
     width: 100%;
     margin-top: 1vh;
   }
 
-  .operations__item:hover .number,
+  .mission__item:hover .number,
   .number {
     display: flex;
     justify-content: center;
@@ -178,9 +174,10 @@
     font-style: normal;
     font-weight: 250;
     line-height: 96%;
+    margin-left: 0;
   }
 
-  .operations__item:hover .description,
+  .mission__item:hover .description,
   .description {
     color: #fff;
     font-size: 1.25rem;
@@ -191,19 +188,20 @@
     margin-top: 3vh;
     width: 100%;
     text-align: center;
+    margin-left: 0;
   }
 }
 
 @media (min-width: 1280px) and (max-width: 1536px) {
-  .operations {
+  .mission {
     padding: 5vh 0;
   }
 
-  .operations__header {
+  .mission__header {
     margin-bottom: 0;
   }
 
-  .operations__description {
+  .mission__description {
     width: 80%;
     margin-bottom: 2rem;
   }
