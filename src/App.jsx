@@ -4,6 +4,7 @@ import OurTeam from "./components/OurTeam";
 import OurInvestors from "./components/OurInvestors";
 import NavProvider from "./context/NavContext";
 import AboutApp from "./components/AboutApp";
+import OurOperations from "./components/OurOperations";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navigation />
         <Hero />
         <AboutApp />
+        <OurOperations />
         <OurTeam />
         <OurInvestors />
       </NavProvider>

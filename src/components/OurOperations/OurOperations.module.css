@@ -1,0 +1,220 @@
+.operations {
+  padding: 10vh 0;
+  height: 100vh;
+}
+
+.container {
+  width: 60%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.operations__header {
+  color: var(--text-white);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.96%; /* 73.472px */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.operations__description {
+  width: 70%;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 36px */
+  text-transform: uppercase;
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5vh;
+}
+
+.operations__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.operations__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.operations__item:hover .marker {
+  border: 1px solid #01c5ff;
+  width: 29px;
+  height: 29px;
+  padding: 14px 9px;
+  transition: all 0.5s linear;
+}
+
+.operations__item:hover .square {
+  border: 1px solid #01c5ff;
+  background: #01c5ff;
+  width: 9px;
+  height: 9px;
+  transition: all 0.5s linear;
+}
+
+.operations__item:hover .number {
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s linear;
+}
+
+.operations__item:hover .description {
+  color: #fff;
+  transition: all 0.5s linear;
+}
+
+.marker {
+  padding: 14px;
+  width: 30px;
+  height: 30px;
+  background: rgba(21, 45, 81, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(
+    315deg,
+    #01c4ff91 53%,
+    #01e8f8a6 88%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 96%;
+}
+
+.number:first-child {
+  margin-left: 25px;
+}
+
+.description {
+  color: #ffffff7b;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 25px;
+  width: 900px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80%;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+
+  .operations {
+    height: auto;
+  }
+
+  .operations__item {
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
+  .operations__item + .operations__item {
+    margin-top: 10vh;
+  }
+
+  .operations__header {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104.96%;
+    text-align: center;
+  }
+
+  .operations__description {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 1vh;
+  }
+
+  .operations__item:hover .number,
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    color: #01c5ff;
+    color: #01c5ff;
+    background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s linear;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 96%;
+  }
+
+  .operations__item:hover .description,
+  .description {
+    color: #fff;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 25px;
+    margin-top: 3vh;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1536px) {
+  .operations {
+    padding: 5vh 0;
+  }
+
+  .operations__header {
+    margin-bottom: 0;
+  }
+
+  .operations__description {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    color: #ffffff7b;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 25px;
+    width: 900px;
+  }
+}
