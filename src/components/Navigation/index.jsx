@@ -7,7 +7,6 @@ import logo from "../../assets/logo.svg";
 import fb from "../../assets/fb-icon.svg";
 import tg from "../../assets/tg-icon.svg";
 import x from "../../assets/x-icon.svg";
-import mail from "../../assets/mail-icon.svg";
 import li from "../../assets/li-icon.svg";
 
 export default function Navigation() {
@@ -38,6 +37,8 @@ export default function Navigation() {
       document
         .getElementById(scrollToId)
         .scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
+      setBurgerMenuClass(`${styles["burger-bar"]} ${styles.unclicked}`);
     }
 
     return (
@@ -89,11 +90,6 @@ export default function Navigation() {
           <li className={styles.soc_link}>
             <a href="#">
               <img src={x} alt="x (twitter)" />
-            </a>
-          </li>
-          <li className={styles.soc_link}>
-            <a href="#">
-              <img src={mail} alt="mail" />
             </a>
           </li>
         </ul>

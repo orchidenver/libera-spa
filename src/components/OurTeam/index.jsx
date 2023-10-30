@@ -3,7 +3,7 @@ import Card from "./Card";
 import { TEAM } from "../../utils/data";
 import styles from "./OurTeam.module.css";
 import { useState } from "react";
-import Modal from "../Modal/Modal";
+import Modal from "../Modal";
 
 export default function OurTeam() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -19,10 +19,12 @@ export default function OurTeam() {
     <section id="ourteamSection" className={styles.ourteam} ref={ourTeamRef}>
       <div className={styles.container}>
         <h3 className={styles["team__header"]}>our team</h3>
-        <p className={styles["team__description"]}>
-          We gathered an international team of not only seasoned professionals,
-          but people who are truly inspired to make a change
-        </p>
+        <div className={styles["description-wrapper"]}>
+          <p className={styles["team__description"]}>
+            We gathered an international team of not only seasoned
+            professionals, but people who are truly inspired to make a change
+          </p>
+        </div>
 
         <div className={styles.team}>
           {TEAM.map((member) => (
