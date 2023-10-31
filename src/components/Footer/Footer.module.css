@@ -60,7 +60,14 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1536px) {
-  .footer {
+  /* .footer {
     padding: 20vh 0 10vh 0;
+  }
+ */
+}
+
+@media screen and (max-width: 800px) {
+  .media {
+    flex-direction: column;
   }
 }

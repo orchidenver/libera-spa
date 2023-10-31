@@ -26,7 +26,9 @@ export default function Card({
         target="_blank"
         rel="noreferrer"
       >
-        <img src={linkImg} alt="linkedin" />
+        <a href="#">
+          <img src={linkImg} alt="linkedin" />
+        </a>
       </a>
     </div>
   );
