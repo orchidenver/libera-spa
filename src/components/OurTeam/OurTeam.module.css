@@ -11,7 +11,7 @@
 
 .team__header {
   color: var(--text-white);
-  font-size: 4rem;
+  font-size: 6.5vh;
   font-style: normal;
   font-weight: 500;
   line-height: 104.96%; /* 73.472px */
@@ -21,7 +21,7 @@
 
 .team__description {
   width: 70%;
-  font-size: 2rem;
+  font-size: 3.25vh;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 36px */
@@ -37,13 +37,12 @@
 .team {
   display: flex;
   justify-content: space-between;
-  margin-top: 2vh;
+  margin-top: 5vh;
   gap: 1vw;
 }
 
 .card {
-  width: 65vw;
-  max-width: 220px;
+  width: 220px;
   max-height: 420px;
   background: linear-gradient(
     90deg,
@@ -54,6 +53,7 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  flex: 0 1 220px;
 }
 
 .card:hover {
@@ -87,7 +87,7 @@
 
 .card__text {
   color: var(--text-white);
-  margin: 2vh 0 0 2vh;
+  margin: 2vh 0 1vh 2vh;
   font-weight: 300;
   font-size: 1rem;
   font-style: normal;
@@ -106,6 +106,7 @@
 
   .ourteam {
     height: auto;
+    padding: 7vh 0;
   }
 
   .team {
@@ -139,7 +140,17 @@
   }
 
   .card {
-    max-width: 320px;
+    width: 270px;
+  }
+
+  .card__title {
+    font-size: 1rem;
+  }
+
+  .card__text {
+    font-size: 0.75rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
 
   .card + .card {

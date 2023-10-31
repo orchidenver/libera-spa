@@ -59,7 +59,7 @@ export default function OurInvestors() {
               className={styles["investor__img"]}
             />
             <a className={styles["investor__description"]} href="#">
-              Wolfgang Lehmacher (World Economic Forum)
+              World Economic Forum
             </a>
           </div>
           <div className={styles.investor}>

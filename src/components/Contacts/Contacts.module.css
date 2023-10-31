@@ -1,5 +1,5 @@
 .contacts {
-  padding: 10vh 0;
+  padding: 0;
   height: 100vh;
 }
 
@@ -11,7 +11,7 @@
 
 .contacts__header {
   color: var(--text-white);
-  font-size: 4rem;
+  font-size: 6.5vh;
   font-style: normal;
   font-weight: 500;
   line-height: 104.96%; /* 73.472px */
@@ -21,13 +21,13 @@
 
 .offices {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .office {
-  width: 65vw;
-  max-width: 300px;
+  width: 280px;
+  max-width: 65vw;
   height: 420px;
   background: linear-gradient(
     90deg,
@@ -45,7 +45,7 @@
 }
 
 .office__subtitle {
-  font-size: 2rem;
+  font-size: 3.25vh;
   font-style: normal;
   font-weight: 400;
   line-height: 116.5%;
@@ -78,7 +78,7 @@
   line-height: normal;
   color: #fff;
   display: flex;
-  align-items: flex-start;
+  gap: 5px;
 }
 
 .office__contact {
@@ -88,11 +88,18 @@
   font-weight: 300;
   line-height: normal;
   color: #fff;
+  display: flex;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 800px) {
   .contacts {
-    margin: 85vh 0 10vh 0;
+    padding: 10vh 0 10vh 0;
     height: 100vh;
   }
 
@@ -112,7 +119,37 @@
   }
 
   .office {
-    width: 100%;
+    width: 270px;
+  }
+
+  .office__subtitle {
+    font-size: 1.25rem;
+    margin: 3vh 0 0 2vw;
+  }
+
+  .office__title {
+    font-size: 1.5rem;
+    margin: 3vh 0 0 2vw;
+  }
+
+  .office__location {
+    margin: 3vh 0 0 2vh;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .office__contact {
+    margin: 3vh 0 0 2vh;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #fff;
   }
 
   .office + .office {

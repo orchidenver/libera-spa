@@ -48,7 +48,7 @@ export default function Hero() {
       </div>
       <div className={styles.container}>
         <section>
-          <h1>
+          <h1 className={styles["hero-header"]}>
             Building the future of small retail{" "}
             <span className="text-gradient">with the power of data</span>
           </h1>

@@ -1,5 +1,5 @@
 .mission {
-  padding: 10vh 0;
+  padding: 15vh 0 10vh 0;
   height: 100vh;
 }
 
@@ -11,7 +11,7 @@
 
 .mission__header {
   color: var(--text-white);
-  font-size: 4rem;
+  font-size: 6.5vh;
   font-style: normal;
   font-weight: 500;
   line-height: 104.96%; /* 73.472px */
@@ -21,7 +21,7 @@
 
 .mission__description {
   width: 70%;
-  font-size: 2rem;
+  font-size: 3.25vh;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 36px */
@@ -112,7 +112,7 @@
 
 .description {
   color: #ffffff7b;
-  font-size: 1.25rem;
+  font-size: 2vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -129,6 +129,7 @@
 
   .mission {
     height: auto;
+    padding: 10vh 0;
   }
 
   .mission__item {
@@ -193,10 +194,6 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1536px) {
-  .mission {
-    padding: 5vh 0;
-  }
-
   .mission__header {
     margin-bottom: 0;
   }

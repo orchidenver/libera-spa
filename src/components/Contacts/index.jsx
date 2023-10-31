@@ -21,13 +21,13 @@ export default function Contacts() {
               united states of america
             </h4>
             <div className={styles["office__location"]}>
-              <img src={location} alt="location" className="icon" />
+              <img src={location} alt="location" className={styles.icon} />
               <span className="address">
                 600 Congress Ave, Austin, TX 78701
               </span>
             </div>
             <div className={styles["office__contact"]}>
-              <img src={phone} alt="contact" className="icon" />
+              <img src={phone} alt="contact" className={styles.icon} />
               <span className="contact">(+1) 512 998 1584</span>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function Contacts() {
             <img src={office2} alt="USA" className={styles["office__img"]} />
             <h4 className={styles["office__title"]}>indonesia</h4>
             <div className={styles["office__location"]}>
-              <img src={location} alt="location" className="icon" />
+              <img src={location} alt="location" className={styles.icon} />
               <span className="address">
                 CoHive 101 Jl. Mega Kuningan Barat Blok E.4.7 No. 1 RT. 5/RW. 2
                 Kawasan Mega Kuningan, Kel. Kuningan Timur, Kec. Setiabudi,
@@ -47,7 +47,7 @@ export default function Contacts() {
             <img src={office3} alt="USA" className={styles["office__img"]} />
             <h4 className={styles["office__title"]}>lithuania</h4>
             <div className={styles["office__location"]}>
-              <img src={location} alt="location" className="icon" />
+              <img src={location} alt="location" className={styles.icon} />
               <span className="address">
                 601 Congress Ave, Austin, TX 78701
               </span>

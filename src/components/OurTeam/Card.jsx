@@ -12,7 +12,11 @@ export default function Card({
 }) {
   return (
     <div className={styles.card} onClick={onClickCardHandler}>
-      <img src={photo} alt="" className={styles["card__img"]} />
+      <img
+        src={photo}
+        alt={`photo of ${name} ${lastName}`}
+        className={styles["card__img"]}
+      />
       <h4 className={styles["card__title"]}>{name}</h4>
       <h4 className={styles["card__title"]}>{lastName}</h4>
       <p className={styles["card__text"]}>{position}</p>

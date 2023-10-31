@@ -1,5 +1,5 @@
 .investors {
-  padding: 10vh 0;
+  padding: 5vh 0;
   height: 100vh;
 }
 
@@ -11,7 +11,7 @@
 
 .investors__header {
   color: var(--text-white);
-  font-size: 4rem;
+  font-size: 6.5vh;
   font-style: normal;
   font-weight: 500;
   line-height: 104.96%; /* 73.472px */
@@ -21,7 +21,7 @@
 
 .investors__description {
   width: 70%;
-  font-size: 2rem;
+  font-size: 3.25vh;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 36px */
@@ -37,8 +37,8 @@
 
 .investors__grid {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
-  grid-template-columns: repeat(3, minmax(300px, 350px));
+  grid-template-columns: repeat(3, minmax(250px, 20vw));
+  place-items: center;
   row-gap: 70px;
   position: relative;
 }
@@ -68,14 +68,28 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1536px) {
+  .investors {
+    padding: 5vh 0;
+  }
+
   .investors__grid {
     row-gap: 35px;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+
+  .investors {
+    padding: 7vh 0;
+    height: auto;
+  }
+
   .investors__grid {
-    display: block;
+    grid-template-columns: minmax(250px, 30vw);
+    justify-content: center;
   }
 
   .investors__header {
@@ -88,10 +102,27 @@
   }
 
   .investors__description {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
+  }
+
+  .investor__description {
     font-size: 1rem;
     text-align: center;
     width: 100%;
     margin-top: 2vh;
+    color: #01c5ff;
+    background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .investor__description:hover {
+    color: #01c5ff;
+    background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
   }
 
   .investor__img {
