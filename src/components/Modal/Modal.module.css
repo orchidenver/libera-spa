@@ -79,6 +79,21 @@
   cursor: pointer;
 }
 
+@media (min-width: 1024px) and (max-width: 1536px) {
+  .modal {
+    width: 60vw;
+  }
+
+  .content {
+    height: 200px;
+  }
+
+  .name,
+  .position {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .modal {
     width: 90vw;
