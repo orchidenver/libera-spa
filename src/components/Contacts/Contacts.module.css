@@ -1,6 +1,6 @@
 .contacts {
   padding: 0;
-  height: 100vh;
+  height: 80vh;
 }
 
 .container {
@@ -169,7 +169,7 @@
 @media (min-width: 1024px) and (max-width: 1536px) {
   .container {
     width: 70%;
-    padding: 20vh 0;
+    padding: 5vh 0 10vh 0;
   }
 
   .office {

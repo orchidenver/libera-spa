@@ -4,10 +4,6 @@ import { NavContext } from "../../context/NavContext";
 import styles from "./Navigation.module.css";
 import { navLinks } from "../../utils/data.js";
 import logo from "../../assets/logo.svg";
-import fb from "../../assets/fb-icon.svg";
-import tg from "../../assets/tg-icon.svg";
-import x from "../../assets/x-icon.svg";
-import li from "../../assets/li-icon.svg";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

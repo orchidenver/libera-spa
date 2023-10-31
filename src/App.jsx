@@ -7,6 +7,7 @@ import AboutApp from "./components/AboutApp";
 import OurMission from "./components/OurMission";
 import Contacts from "./components/Contacts";
 import OurOperations from "./components/OurOperations";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <OurTeam />
         <OurInvestors />
         <Contacts />
+        <Footer />
       </NavProvider>
     </div>
   );
