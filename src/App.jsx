@@ -6,6 +6,7 @@ import NavProvider from "./context/NavContext";
 import AboutApp from "./components/AboutApp";
 import OurMission from "./components/OurMission";
 import Contacts from "./components/Contacts";
+import OurOperations from "./components/OurOperations";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Navigation />
         <Hero />
         <AboutApp />
+        <OurOperations />
         <OurMission />
         <OurTeam />
         <OurInvestors />
