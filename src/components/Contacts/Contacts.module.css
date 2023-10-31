@@ -49,9 +49,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 116.5%;
-  margin: 1vh 0 0 1vw;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 1vh;
 }
 
 .office__title {
@@ -61,17 +61,16 @@
   font-weight: 700;
   line-height: 120%;
   font-style: normal;
-  margin: 1vh 0 0 2vh;
   color: #01c5ff;
   background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
   background-clip: text;
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 1vh;
 }
 
 .office__location {
-  margin: 1vh 0 0 2vh;
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
@@ -79,10 +78,10 @@
   color: #fff;
   display: flex;
   gap: 5px;
+  margin-bottom: 1vh;
 }
 
 .office__contact {
-  margin: 1vh 0 0 2vh;
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
@@ -97,6 +96,10 @@
   height: 20px;
 }
 
+.content {
+  padding: 1vh 1vw;
+}
+
 @media screen and (max-width: 800px) {
   .contacts {
     padding: 10vh 0 10vh 0;
@@ -109,31 +112,32 @@
     margin: 0 auto;
   }
 
-  .office__subtitle {
-    margin: 1vh 0 0 2vh;
+  .content {
+    padding: 2vh 5vw;
   }
 
   .offices {
-    flex-direction: column;
     width: 80vw;
+    display: grid;
+    place-items: center;
   }
 
   .office {
-    width: 270px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .office__subtitle {
     font-size: 1.25rem;
-    margin: 3vh 0 0 2vw;
+    margin-bottom: 1vh;
   }
 
   .office__title {
     font-size: 1.5rem;
-    margin: 3vh 0 0 2vw;
+    margin-bottom: 1vh;
   }
 
   .office__location {
-    margin: 3vh 0 0 2vh;
     font-size: 1rem;
     font-style: normal;
     font-weight: 300;
@@ -141,10 +145,10 @@
     color: #fff;
     display: flex;
     align-items: flex-start;
+    margin-bottom: 1vh;
   }
 
   .office__contact {
-    margin: 3vh 0 0 2vh;
     font-size: 1rem;
     font-style: normal;
     font-weight: 300;
@@ -162,7 +166,7 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1536px) {
+@media (min-width: 1024px) and (max-width: 1536px) {
   .container {
     width: 70%;
     padding: 20vh 0;

@@ -71,28 +71,6 @@ export default function Navigation() {
         <ul className={styles.navigation}>
           {navLinks.map((link) => renderNavLink(link))}
         </ul>
-        <ul className={styles.media}>
-          <li className={styles.soc_link}>
-            <a href="#">
-              <img src={fb} alt="facebook" />
-            </a>
-          </li>
-          <li className={styles.soc_link}>
-            <a href="#">
-              <img src={li} alt="linkedin" />
-            </a>
-          </li>
-          <li className={styles.soc_link}>
-            <a href="#">
-              <img src={tg} alt="telegram" />
-            </a>
-          </li>
-          <li className={styles.soc_link}>
-            <a href="#">
-              <img src={x} alt="x (twitter)" />
-            </a>
-          </li>
-        </ul>
       </nav>
       <button
         className={styles["burger-menu"]}
