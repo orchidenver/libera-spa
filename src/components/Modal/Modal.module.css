@@ -97,6 +97,11 @@
   .position {
     font-size: 1.5rem;
   }
+
+  .photo {
+    width: 200px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -146,5 +151,10 @@
 
   .about {
     padding-top: 0;
+  }
+
+  .photo {
+    width: auto;
+    height: auto;
   }
 }
