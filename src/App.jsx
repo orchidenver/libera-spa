@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import OurTeam from "./components/OurTeam";
@@ -13,6 +14,22 @@ import OurFlow from "./components/OurFlow";
 function App() {
   return (
     <div className="app">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Libera</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
+      <Helmet>
+        <meta
+          name="description"
+          content="Building the future of small retail with the power of data"
+        />
+        <title>Libera - Homepage</title>
+        <meta
+          name="keywords"
+          content="libera, ai, retail, technology, Indonesia, supply, logistics"
+        ></meta>
+      </Helmet>
       <NavProvider>
         <Navigation />
         <Hero />

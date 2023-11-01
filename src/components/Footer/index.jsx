@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.container} ${styles.flex}`}>
-        <img src={logo} alt="logo" className={styles.logo} />
+        <img src={logo} alt="logo" className={styles.logo} loading="lazy" />
         <div className={styles.media}>
           <div className={styles.item}>
             <a
@@ -17,7 +17,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={fb} alt="Facebook" />
+              <img src={fb} alt="Facebook" loading="lazy" />
             </a>
           </div>
           <div className={styles.item}>
@@ -26,7 +26,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={li} alt="LinkedIn" />
+              <img src={li} alt="LinkedIn" loading="lazy" />
             </a>
           </div>
           <div className={styles.item}>
@@ -35,7 +35,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={tg} alt="Telegram" />
+              <img src={tg} alt="Telegram" loading="lazy" />
             </a>
           </div>
           <div className={styles.item}>
@@ -44,7 +44,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={x} alt="X" />
+              <img src={x} alt="X" loading="lazy" />
             </a>
           </div>
         </div>

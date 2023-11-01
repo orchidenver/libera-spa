@@ -1,0 +1,5 @@
+meta description +++
+button names +++
+lazy loading +++
+links are not crawlable +++ 
+favicon

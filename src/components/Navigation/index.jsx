@@ -38,17 +38,16 @@ export default function Navigation() {
     }
 
     return (
-      <li className={styles.nav_link} key={content}>
-        <a
-          onClick={handleClickNav}
-          className={
-            activeLinkId === content
-              ? `${styles["active-link"]} ${styles.nav_link}`
-              : styles.nav_link
-          }
-        >
-          {content}
-        </a>
+      <li
+        className={
+          activeLinkId === content
+            ? `${styles["active-link"]} ${styles.nav_link}`
+            : styles.nav_link
+        }
+        key={content}
+        onClick={handleClickNav}
+      >
+        {content}
       </li>
     );
   }
@@ -60,6 +59,7 @@ export default function Navigation() {
         alt="logo"
         className={styles.logo}
         onClick={handleClickLogo}
+        loading="lazy"
       />
       <nav
         className={`${styles.menu} ${mobileMenuOpen ? activeMenuStyles : ""}`}
@@ -69,6 +69,7 @@ export default function Navigation() {
         </ul>
       </nav>
       <button
+        aria-label="Open / close menu"
         className={styles["burger-menu"]}
         onClick={() => {
           updateBurgerMenuClass();

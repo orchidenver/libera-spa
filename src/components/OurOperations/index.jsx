@@ -26,6 +26,7 @@ export default function OurOperations() {
               src={operation1}
               alt="Image"
               className={styles["operations__img"]}
+              loading="lazy"
             />
             <h4 className={styles["operations__title"]}>
               Recommendation engine
@@ -43,6 +44,7 @@ export default function OurOperations() {
               src={operation2}
               alt="Image"
               className={styles["operations__img"]}
+              loading="lazy"
             />
             <h4 className={styles["operations__title"]}>
               Inventory management
@@ -60,6 +62,7 @@ export default function OurOperations() {
               src={operation3}
               alt="Image"
               className={styles["operations__img"]}
+              loading="lazy"
             />
             <h4 className={styles["operations__title"]}>Predict demand</h4>
             <ul className={styles["operations__list"]}>

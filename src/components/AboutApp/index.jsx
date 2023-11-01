@@ -28,10 +28,15 @@ export default function AboutApp() {
               : "Our easy-to-use POS and order management system aggregates data directly from brands and distributors, ensures competitive prices and thus better margins. Libera is allowing small entrepreneurs to take advantage of their sales data and increase their take home by up to 100%. Thanks to constantly expanding assortment, we provide store owners with an opportunity to scale their business"}
           </p>
           <a href="#" className={styles["app__link"]}>
-            <img src={appBtn} alt="Google Play application link" />
+            <img
+              src={appBtn}
+              alt="Google Play application link"
+              loading="lazy"
+            />
           </a>
         </div>
         <img
+          loading="lazy"
           src={appDemo}
           alt="App demonstration"
           className={styles["app__img"]}

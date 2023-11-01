@@ -27,6 +27,7 @@ export default function OurInvestors() {
               src={investor1}
               alt="GAINS Associates"
               className={styles["investor__img"]}
+              loading="lazy"
             />
             <a
               className={styles["investor__description"]}
@@ -42,6 +43,7 @@ export default function OurInvestors() {
               src={investor2}
               alt="Baltic Sandbox Ventures"
               className={styles["investor__img"]}
+              loading="lazy"
             />
             <a
               className={styles["investor__description"]}
@@ -57,6 +59,7 @@ export default function OurInvestors() {
               src={investor3}
               alt="Animoca Brands"
               className={styles["investor__img"]}
+              loading="lazy"
             />
             <a
               className={styles["investor__description"]}
@@ -72,6 +75,7 @@ export default function OurInvestors() {
               src={investor4}
               alt="Wolfgang Lehmacher (World Economic Forum)"
               className={styles["investor__img"]}
+              loading="lazy"
             />
             <a
               className={styles["investor__description"]}
@@ -87,6 +91,7 @@ export default function OurInvestors() {
               src={investor6}
               alt="Asymmetrica Ventures"
               className={styles["investor__img"]}
+              loading="lazy"
             />
             <a
               className={styles["investor__description"]}
@@ -102,6 +107,7 @@ export default function OurInvestors() {
               src={investor6}
               alt="ArtesianVC"
               className={styles["investor__img"]}
+              loading="lazy"
             />
             <a
               className={styles["investor__description"]}

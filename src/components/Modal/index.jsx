@@ -52,6 +52,7 @@ export default function Modal({ open, onClose, content }) {
           src={content?.photo}
           alt={`${content?.name} ${content?.lastName}`}
           className={styles.photo}
+          loading="lazy"
         />
         <div className={styles.info}>
           <p
@@ -59,7 +60,7 @@ export default function Modal({ open, onClose, content }) {
           >{`${content?.name} ${content?.lastName}`}</p>
           <div className={styles.position}>{content?.position}</div>
           <a href={content?.link} target="_blank" rel="noreferrer">
-            <img src={li} alt="LinkedIn" />
+            <img src={li} alt="LinkedIn" loading="lazy" />
           </a>
         </div>
       </div>
@@ -79,8 +80,8 @@ export default function Modal({ open, onClose, content }) {
           chains.
         </p>
       </div>
-      <div className={styles.close} onClick={onClose}>
-        <img src={close} alt="Close" />
+      <div className={styles.close} onClick={onClose} aria-label="Close modal">
+        <img src={close} alt="Close modal" loading="lazy" />
       </div>
     </dialog>,
     document.getElementById("modal")

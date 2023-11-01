@@ -17,6 +17,7 @@ export default function Card({
         alt={`photo of ${name} ${lastName}`}
         className={styles["card__img"]}
         onClick={onClickCardHandler}
+        loading="lazy"
       />
       <h4 className={styles["card__title"]}>{name}</h4>
       <h4 className={styles["card__title"]}>{lastName}</h4>
@@ -28,7 +29,7 @@ export default function Card({
         rel="noreferrer"
       >
         <a href={link} target="_blank" rel="noreferrer">
-          <img src={linkImg} alt="linkedin" />
+          <img src={linkImg} alt="linkedin" loading="lazy" />
         </a>
       </a>
     </div>
