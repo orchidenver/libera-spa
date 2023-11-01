@@ -1,10 +1,10 @@
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import styles from "./OurFlow.module.css";
-import flow1 from "../../assets/flow1.jpg";
-import flow2 from "../../assets/flow2.jpg";
-import flow3 from "../../assets/flow3.jpg";
-import flow4 from "../../assets/flow4.jpg";
+import flow1 from "../../assets/flow1.webp";
+import flow2 from "../../assets/flow2.webp";
+import flow3 from "../../assets/flow3.webp";
+import flow4 from "../../assets/flow4.webp";
 
 export default function OurFlow() {
   const ourFlowRef = useNav("our flow");

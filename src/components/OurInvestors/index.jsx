@@ -1,10 +1,10 @@
 import { useNav } from "../../hooks/useNav";
 import styles from "./OurInvestors.module.css";
-import investor1 from "../../assets/investor-1.jpg";
-import investor2 from "../../assets/investor-2.jpg";
-import investor3 from "../../assets/investor-3.jpg";
-import investor4 from "../../assets/investor-4.jpg";
-import investor6 from "../../assets/investor-6.jpg";
+import investor1 from "../../assets/investor-1.webp";
+import investor2 from "../../assets/investor-2.webp";
+import investor3 from "../../assets/investor-3.webp";
+import investor4 from "../../assets/investor-4.webp";
+import investor6 from "../../assets/investor-6.webp";
 
 export default function OurInvestors() {
   const ourInvestorsRef = useNav("our investors");

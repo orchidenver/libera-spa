@@ -1,6 +1,5 @@
 import styles from "./Footer.module.css";
 import x from "../../assets/x.svg";
-import mail from "../../assets/mail.svg";
 import tg from "../../assets/tg.svg";
 import fb from "../../assets/fb.svg";
 import li from "../../assets/li.svg";

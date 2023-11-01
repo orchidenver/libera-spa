@@ -1,7 +1,7 @@
-import photo1 from "../assets/team1.jpg";
-import photo2 from "../assets/team2.jpg";
-import photo3 from "../assets/team3.jpg";
-import photo4 from "../assets/team4.jpg";
+import photo1 from "../assets/team1.webp";
+import photo2 from "../assets/team2.webp";
+import photo3 from "../assets/team3.webp";
+import photo4 from "../assets/team4.webp";
 
 export const TEAM = [
     {

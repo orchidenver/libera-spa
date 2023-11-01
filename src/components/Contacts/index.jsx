@@ -1,8 +1,8 @@
 import { useNav } from "../../hooks/useNav";
 import styles from "./Contacts.module.css";
-import office1 from "../../assets/office1.jpg";
-import office2 from "../../assets/office2.jpg";
-import office3 from "../../assets/office3.jpg";
+import office1 from "../../assets/office1.webp";
+import office2 from "../../assets/office2.webp";
+import office3 from "../../assets/office3.webp";
 import location from "../../assets/location.svg";
 import phone from "../../assets/phone.svg";
 
