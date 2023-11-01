@@ -61,6 +61,11 @@
   padding: 5vh 5vw;
 }
 
+.photo {
+  width: 245px;
+  height: 245px;
+}
+
 .bio {
   color: #fff;
   font-style: normal;

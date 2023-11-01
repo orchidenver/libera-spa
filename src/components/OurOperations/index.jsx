@@ -9,7 +9,7 @@ export default function OurOperations() {
 
   return (
     <section
-      id="ouroperationsSection"
+      id="whatwedoSection"
       ref={operationsRef}
       className={styles.operations}
     >
@@ -23,7 +23,7 @@ export default function OurOperations() {
         <div className={styles["operations__block"]}>
           <div className={styles["operation__item"]}>
             <img
-              src={operation2}
+              src={operation1}
               alt="Image"
               className={styles["operations__img"]}
             />
@@ -57,7 +57,7 @@ export default function OurOperations() {
           </div>
           <div className={styles["operation__item"]}>
             <img
-              src={operation2}
+              src={operation3}
               alt="Image"
               className={styles["operations__img"]}
             />

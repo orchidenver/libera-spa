@@ -190,14 +190,14 @@ header {
     width: 100vw;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
   }
 
   .logo {
-    margin-left: 0;
-    width: 15vw;
+    margin-left: 2vh;
+    width: 13vw;
     margin-top: 2vh;
   }
 

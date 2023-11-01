@@ -2,7 +2,7 @@ import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import styles from "./AboutApp.module.css";
 import appDemo from "../../assets/app-demo.png";
-import appBtn from "../../assets/app-btn.jpg";
+import appBtn from "../../assets/app-btn.png";
 
 export default function AboutApp() {
   const liberaAppRef = useNav("libera app");

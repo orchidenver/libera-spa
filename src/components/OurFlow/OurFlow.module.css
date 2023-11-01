@@ -1,5 +1,5 @@
 .flow {
-  padding: 10vh 0;
+  padding: 15vh 0 10vh 0;
 }
 
 .container {
@@ -43,7 +43,7 @@ h4.flow__description.subheader {
 h4.flow__description.subheader::before {
   position: absolute;
   content: url("../../assets/arrow.svg");
-  left: -30px;
+  left: -1.5vw;
 }
 
 .flow__container {
@@ -97,6 +97,10 @@ h4.flow__description.subheader::before {
 }
 
 @media (max-width: 800px) {
+  .flow {
+    padding: 10vh 0 10vh 0;
+  }
+
   .container {
     width: 80%;
   }

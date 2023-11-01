@@ -28,7 +28,12 @@ export default function OurInvestors() {
               alt="GAINS Associates"
               className={styles["investor__img"]}
             />
-            <a className={styles["investor__description"]} href="#">
+            <a
+              className={styles["investor__description"]}
+              href="https://www.gains-associates.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               GAINS Associates
             </a>
           </div>
@@ -38,7 +43,12 @@ export default function OurInvestors() {
               alt="Baltic Sandbox Ventures"
               className={styles["investor__img"]}
             />
-            <a className={styles["investor__description"]} href="#">
+            <a
+              className={styles["investor__description"]}
+              href="https://balticsandbox.ventures/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Baltic Sandbox Ventures
             </a>
           </div>
@@ -48,7 +58,12 @@ export default function OurInvestors() {
               alt="Animoca Brands"
               className={styles["investor__img"]}
             />
-            <a className={styles["investor__description"]} href="#">
+            <a
+              className={styles["investor__description"]}
+              href="https://www.animocabrands.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Animoca Brands
             </a>
           </div>
@@ -58,7 +73,12 @@ export default function OurInvestors() {
               alt="Wolfgang Lehmacher (World Economic Forum)"
               className={styles["investor__img"]}
             />
-            <a className={styles["investor__description"]} href="#">
+            <a
+              className={styles["investor__description"]}
+              href="https://www.weforum.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
               World Economic Forum
             </a>
           </div>
@@ -68,7 +88,12 @@ export default function OurInvestors() {
               alt="Asymmetrica Ventures"
               className={styles["investor__img"]}
             />
-            <a className={styles["investor__description"]} href="#">
+            <a
+              className={styles["investor__description"]}
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
               Asymmetrica Ventures
             </a>
           </div>
@@ -78,7 +103,12 @@ export default function OurInvestors() {
               alt="ArtesianVC"
               className={styles["investor__img"]}
             />
-            <a className={styles["investor__description"]} href="#">
+            <a
+              className={styles["investor__description"]}
+              href="https://www.artesianinvest.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               ArtesianVC
             </a>
           </div>

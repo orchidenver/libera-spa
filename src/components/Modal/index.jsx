@@ -58,7 +58,7 @@ export default function Modal({ open, onClose, content }) {
             className={styles.name}
           >{`${content?.name} ${content?.lastName}`}</p>
           <div className={styles.position}>{content?.position}</div>
-          <a href={content?.link}>
+          <a href={content?.link} target="_blank" rel="noreferrer">
             <img src={li} alt="LinkedIn" />
           </a>
         </div>

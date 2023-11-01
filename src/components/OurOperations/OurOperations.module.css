@@ -1,5 +1,5 @@
 .operations {
-  padding: 10vh 0;
+  padding: 15vh 0 0 0;
   height: 100vh;
 }
 
@@ -32,7 +32,7 @@
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 .operations__block {
@@ -53,8 +53,9 @@
 }
 
 .operations__img {
-  width: 265px;
+  width: 165px;
   filter: opacity(0.6);
+  margin-bottom: 3vh;
 }
 
 .operations__title {
@@ -110,5 +111,18 @@
     display: grid;
     place-items: center;
     justify-content: center;
+    gap: 10vh;
+  }
+
+  .operation__item {
+    align-items: center;
+  }
+
+  .operations__title {
+    text-align: center;
+  }
+
+  .operations__img {
+    filter: opacity(1);
   }
 }

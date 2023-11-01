@@ -11,11 +11,12 @@ export default function Card({
   onClickCardHandler,
 }) {
   return (
-    <div className={styles.card} onClick={onClickCardHandler}>
+    <div className={styles.card}>
       <img
         src={photo}
         alt={`photo of ${name} ${lastName}`}
         className={styles["card__img"]}
+        onClick={onClickCardHandler}
       />
       <h4 className={styles["card__title"]}>{name}</h4>
       <h4 className={styles["card__title"]}>{lastName}</h4>
@@ -26,7 +27,7 @@ export default function Card({
         target="_blank"
         rel="noreferrer"
       >
-        <a href="#">
+        <a href={link} target="_blank" rel="noreferrer">
           <img src={linkImg} alt="linkedin" />
         </a>
       </a>

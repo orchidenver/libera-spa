@@ -5,7 +5,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: url("../../assets/app-bg.jpg") no-repeat center center fixed;
+  background: url("../../assets/app-bg.jpg") no-repeat 25% 0% fixed;
   background-size: cover;
   position: relative;
 }

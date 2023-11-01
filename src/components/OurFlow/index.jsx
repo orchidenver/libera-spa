@@ -5,16 +5,21 @@ import flow1 from "../../assets/flow1.jpg";
 import flow2 from "../../assets/flow2.jpg";
 import flow3 from "../../assets/flow3.jpg";
 import flow4 from "../../assets/flow4.jpg";
-import arrow from "../../assets/arrow.svg";
 
 export default function OurFlow() {
   const ourFlowRef = useNav("our flow");
   const mobileSize = useMediaQuery("(max-width: 800px)");
 
   return (
-    <section id="ourflowSection" className={styles.flow} ref={ourFlowRef}>
+    <section className={styles.flow}>
       <div className={mobileSize ? "" : styles.container}>
-        <h3 className={styles["flow__header"]}>our flow</h3>
+        <h3
+          className={styles["flow__header"]}
+          id="ourflowSection"
+          ref={ourFlowRef}
+        >
+          our flow
+        </h3>
         <p className={styles["flow__description"]}>
           Connecting the Dots Between Consumers, Brands, and Retail with AI
         </p>
@@ -69,7 +74,7 @@ export default function OurFlow() {
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
             >
-              Order and inventory management
+              Data dividend
             </h4>
             <p className={styles.content}>
               An incentive mechanism created to make an impact and return to the
@@ -97,7 +102,7 @@ export default function OurFlow() {
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
             >
-              Order and inventory management
+              Increased sales
             </h4>
             <p className={styles.content}>
               By acquiring sales data directly from the POS, we can forecast
@@ -132,7 +137,7 @@ export default function OurFlow() {
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
             >
-              Order and inventory management
+              Financing
             </h4>
             <p className={styles.content}>
               Many store owners lack access to much needed working capital for

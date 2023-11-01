@@ -13,28 +13,39 @@ export default function Footer() {
         <img src={logo} alt="logo" className={styles.logo} />
         <div className={styles.media}>
           <div className={styles.item}>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/LiberaTechAI/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={fb} alt="Facebook" />
             </a>
           </div>
           <div className={styles.item}>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/31540905/admin/feed/posts/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={li} alt="LinkedIn" />
             </a>
           </div>
           <div className={styles.item}>
-            <a href="#">
+            <a
+              href="https://t.me/libera_foundation"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={tg} alt="Telegram" />
             </a>
           </div>
           <div className={styles.item}>
-            <a href="#">
+            <a
+              href="https://twitter.com/LIBERA_GLOBAL?t=s64jqugzj6B-AsI4ipH-PQ&s=08"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={x} alt="X" />
-            </a>
-          </div>
-          <div className={styles.item}>
-            <a href="#">
-              <img src={mail} alt="Mail" />
             </a>
           </div>
         </div>
