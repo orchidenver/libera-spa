@@ -8,6 +8,7 @@ import OurMission from "./components/OurMission";
 import Contacts from "./components/Contacts";
 import OurOperations from "./components/OurOperations";
 import Footer from "./components/Footer";
+import OurFlow from "./components/OurFlow";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <NavProvider>
         <Navigation />
         <Hero />
+        <OurFlow />
         <AboutApp />
         <OurOperations />
         <OurMission />

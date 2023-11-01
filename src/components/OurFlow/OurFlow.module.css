@@ -1,0 +1,158 @@
+.flow {
+  padding: 10vh 0;
+}
+
+.container {
+  width: 60%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.flow__header {
+  color: var(--text-white);
+  font-size: 6.5vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.96%; /* 73.472px */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.flow__description {
+  width: 70%;
+  font-size: 3.25vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 36px */
+  text-transform: uppercase;
+  color: #01c5ff;
+  background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10vh;
+}
+
+h4.flow__description.subheader {
+  position: relative;
+  margin-bottom: 2vh;
+  margin-left: 1.5vw;
+}
+
+h4.flow__description.subheader::before {
+  position: absolute;
+  content: url("../../assets/arrow.svg");
+  left: -30px;
+}
+
+.flow__container {
+  display: flex;
+  position: relative;
+  padding: 4vh 0;
+}
+
+.flow__img-crop {
+  width: 600px;
+  height: 370px;
+}
+
+.flow__text {
+  text-align: left;
+  padding: 2vh;
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 45, 81, 0.7) 0%,
+    rgba(43, 60, 94, 0.7) 100%
+  );
+  backdrop-filter: blur(10px);
+  width: 60%;
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.content {
+  margin-left: 1.5vw;
+}
+
+.flow__text-right {
+  left: 70%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.flow__text-left {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+
+  .flow__header {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 104.96%;
+    text-align: center;
+  }
+
+  .flow__description {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
+    padding: 0 10vw;
+  }
+
+  .flow__container {
+    display: block;
+    padding: 0;
+  }
+
+  .flow__container + .flow__container {
+    margin-top: 5vh;
+  }
+
+  .flow__img,
+  .flow__img-crop {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+    border-radius: 0px;
+  }
+
+  h4.flow__description.subheader::before {
+    position: absolute;
+    content: "";
+    left: 0;
+  }
+
+  .flow__text {
+    margin-top: -1vh;
+    text-align: left;
+    padding: 3vh 2vh;
+    position: static;
+    background-color: #fff;
+    border-radius: 0;
+    width: 100%;
+    transform: translate(0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(21, 45, 81, 0.7) 0%,
+      rgba(43, 60, 94, 0.7) 100%
+    );
+  }
+}
