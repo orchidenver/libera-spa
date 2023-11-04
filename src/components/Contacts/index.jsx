@@ -89,7 +89,8 @@ export default function Contacts() {
                   loading="lazy"
                 />
                 <span className="address">
-                  601 Congress Ave, Austin, TX 78701
+                  Vilnius office address - Gynėjų g. 14, 01109 Vilnius,
+                  Lithuania
                 </span>
               </div>
             </div>

@@ -47,6 +47,7 @@
   width: 700px;
   max-width: 60vw;
   position: relative;
+  animation: slide-left 2s ease-in-out;
 }
 
 .text {
@@ -60,6 +61,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  animation: slide-right 2s ease-in-out;
 }
 
 .grids {
@@ -247,6 +249,7 @@
     font-size: 2rem;
     text-align: center;
     max-width: 80vw;
+    animation: slide-up 2s ease-in-out;
   }
 
   .text {
@@ -254,6 +257,7 @@
     text-align: center;
     position: static;
     max-width: 65vw;
+    animation: slide-down 2s ease-in-out;
   }
 
   img {
@@ -266,5 +270,59 @@
 
   .grids {
     display: none;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(30px);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
   }
 }

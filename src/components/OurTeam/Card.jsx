@@ -28,9 +28,7 @@ export default function Card({
         target="_blank"
         rel="noreferrer"
       >
-        <a href={link} target="_blank" rel="noreferrer">
-          <img src={linkImg} alt="linkedin" loading="lazy" />
-        </a>
+        <img src={linkImg} alt="linkedin" loading="lazy" />
       </a>
     </div>
   );

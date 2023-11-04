@@ -65,20 +65,13 @@ export default function Modal({ open, onClose, content }) {
         </div>
       </div>
       <div className={styles.about}>
-        <p className={styles.bio}>
-          Leading our team is Max Ward – our founder and a true citizen of SEA
-          who has spent 20 years in various countries of the region, studying
-          the markets, opportunities and most importantly people.
-        </p>
-        <p className={styles.bio}>
-          Max is a strong believer in the potential of emerging countries. It is
-          an uphill climb to find someone who knows more about Asia retail
-          supply chains than Max. With over a decade’s worth of experience in
-          the Asia-Pacific region, Max has led new development strategies
-          focusing on the global application of Artificial Intelligence and
-          machine learning to build more efficient and sustainable supply
-          chains.
-        </p>
+        {content?.bio.map((paragraph, i) => {
+          return (
+            <p className={styles?.bio} key={i}>
+              {paragraph}
+            </p>
+          );
+        })}
       </div>
       <div className={styles.close} onClick={onClose} aria-label="Close modal">
         <img src={close} alt="Close modal" loading="lazy" />

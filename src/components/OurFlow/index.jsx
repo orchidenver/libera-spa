@@ -24,17 +24,12 @@ export default function OurFlow() {
           Connecting the Dots Between Consumers, Brands, and Retail with AI
         </p>
         <div className={styles["flow__container"]}>
-          <picture>
-            <source media="(max-width: 800px)" srcSet={flow1} />
-            <source media="(max-width: 1280px)" srcSet={flow1} />
-            <source media="(max-width: 1920px)" srcSet={flow1} />
-            <img
-              loading="lazy"
-              src={flow1}
-              alt="Water example"
-              className={styles["flow__img"]}
-            />
-          </picture>
+          <img
+            loading="lazy"
+            src={flow1}
+            alt="Water example"
+            className={styles["flow__img"]}
+          />
           <div
             className={`${styles["flow__text"]} ${styles["flow__text-right"]}`}
           >
@@ -44,8 +39,11 @@ export default function OurFlow() {
               Order and inventory management
             </h4>
             <p className={styles.content}>
-              We offer store owners an opportunity to order directly from brands
-              and distributors which ensures best deals on the market
+              With billions of US dollars of inventory produced but never sold -
+              understanding what is needed and where is key. We offer store
+              owners an opportunity to follow client’s needs and order directly
+              from brands and distributors which ensures best deals on the
+              market
             </p>
           </div>
         </div>
@@ -54,17 +52,12 @@ export default function OurFlow() {
             mobileSize ? "" : styles.reverse
           }`}
         >
-          <picture>
-            <source media="(max-width: 800px)" srcSet={flow2} />
-            <source media="(max-width: 1280px)" srcSet={flow2} />
-            <source media="(max-width: 1920px)" srcSet={flow2} />
-            <img
-              loading="lazy"
-              src={flow2}
-              alt="Water example"
-              className={styles["flow__img-crop"]}
-            />
-          </picture>
+          <img
+            loading="lazy"
+            src={flow2}
+            alt="Water example"
+            className={styles["flow__img-crop"]}
+          />
 
           <div
             className={`${styles["flow__text"]} ${
@@ -85,17 +78,12 @@ export default function OurFlow() {
           </div>
         </div>
         <div className={styles["flow__container"]}>
-          <picture>
-            <source media="(max-width: 800px)" srcSet={flow3} />
-            <source media="(max-width: 1280px)" srcSet={flow3} />
-            <source media="(max-width: 1920px)" srcSet={flow3} />
-            <img
-              loading="lazy"
-              src={flow3}
-              alt="Water example"
-              className={styles["flow__img"]}
-            />
-          </picture>
+          <img
+            loading="lazy"
+            src={flow3}
+            alt="Water example"
+            className={styles["flow__img"]}
+          />
           <div
             className={`${styles["flow__text"]} ${styles["flow__text-right"]}`}
           >
@@ -117,17 +105,12 @@ export default function OurFlow() {
             mobileSize ? "" : styles.reverse
           }`}
         >
-          <picture>
-            <source media="(max-width: 800px)" srcSet={flow4} />
-            <source media="(max-width: 1280px)" srcSet={flow4} />
-            <source media="(max-width: 1920px)" srcSet={flow4} />
-            <img
-              loading="lazy"
-              src={flow4}
-              alt="Water example"
-              className={styles["flow__img"]}
-            />
-          </picture>
+          <img
+            loading="lazy"
+            src={flow4}
+            alt="Water example"
+            className={styles["flow__img"]}
+          />
 
           <div
             className={`${styles["flow__text"]} ${

@@ -1,5 +1,5 @@
 .mission {
-  padding: 15vh 0 10vh 0;
+  padding: 10vh 0 10vh 0;
 }
 
 .container {
@@ -192,7 +192,11 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1536px) {
+@media (min-width: 1024px) and (max-width: 1536px) {
+  .mission {
+    padding: 25vh 0 10vh 0;
+  }
+
   .mission__header {
     margin-bottom: 0;
   }

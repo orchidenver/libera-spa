@@ -43,7 +43,7 @@ h4.flow__description.subheader {
 h4.flow__description.subheader::before {
   position: absolute;
   content: url("../../assets/arrow.svg");
-  left: -1.5vw;
+  left: min(-20px, -27px);
 }
 
 .flow__container {
@@ -54,7 +54,7 @@ h4.flow__description.subheader::before {
 
 .flow__img-crop {
   width: 600px;
-  height: 370px;
+  height: 400px;
 }
 
 .flow__text {
