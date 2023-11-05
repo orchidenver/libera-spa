@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 10vh;
+  padding: 10vh 0;
 }
 
 .container {
@@ -61,7 +61,7 @@
 
 @media (min-width: 1024px) and (max-width: 1536px) {
   .footer {
-    padding-top: 10vh;
+    padding: 20vh 0 10vh;
   }
 }
 
