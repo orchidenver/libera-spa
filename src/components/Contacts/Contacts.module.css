@@ -167,9 +167,12 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1536px) {
+  .contacts {
+    padding: 25vh 0 0;
+  }
+
   .container {
     width: 70%;
-    padding: 5vh 0 10vh 0;
   }
 
   .office {

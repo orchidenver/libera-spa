@@ -68,13 +68,18 @@
   background-image: -webkit-linear-gradient(315deg, #01c5ff 53%, #01e9f8 88%);
 }
 
-@media (min-width: 1280px) and (max-width: 1536px) {
+@media (min-width: 1024px) and (max-width: 1536px) {
   .investors {
     padding: 5vh 0;
   }
 
   .investors__grid {
-    row-gap: 35px;
+    grid-template-columns: repeat(2, minmax(250px, 30vw));
+    gap: 35px;
+  }
+
+  .investor__img {
+    width: 100%;
   }
 }
 
