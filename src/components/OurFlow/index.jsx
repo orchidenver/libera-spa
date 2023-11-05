@@ -120,9 +120,8 @@ export default function OurFlow() {
                 </h4>
                 <p className={styles.content}>
                   An incentive mechanism created to make an impact and return to
-                  the community. We value our users above all and want to build
-                  strong and trustworthy relationships with constantly
-                  increasing collaboration
+                  the community of our users who form the key pillar of retail
+                  scene. Increase your home takeaway by sharing the sales data
                 </p>
               </div>
             </>
@@ -163,9 +162,8 @@ export default function OurFlow() {
                 </h4>
                 <p className={styles.content}>
                   An incentive mechanism created to make an impact and return to
-                  the community. We value our users above all and want to build
-                  strong and trustworthy relationships with constantly
-                  increasing collaboration
+                  the community of our users who form the key pillar of retail
+                  scene. Increase your home takeaway by sharing the sales data
                 </p>
               </motion.div>
             </>
