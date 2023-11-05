@@ -1,6 +1,22 @@
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
+import { motion } from "framer-motion";
 import styles from "./OurMission.module.css";
+
+const MOTION_CHILD_VARIANT = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const MOTION_CONTAINER = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+};
 
 export default function OurMission() {
   const missionRef = useNav("our mission");
@@ -13,8 +29,16 @@ export default function OurMission() {
         <p className={styles["mission__description"]}>
           Inspired by the power of people, data, and technology
         </p>
-        <div className={styles["mission__list"]}>
-          <div className={styles["mission__item"]}>
+        <motion.div
+          className={styles["mission__list"]}
+          variants={MOTION_CONTAINER}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <motion.div
+            className={styles["mission__item"]}
+            variants={MOTION_CHILD_VARIANT}
+          >
             {!mobileSize && (
               <div className={styles.marker}>
                 <div className={styles.square}></div>
@@ -28,8 +52,11 @@ export default function OurMission() {
               chains, Liber will create a social, financial, and environmental
               change in Emerging Asia
             </div>
-          </div>
-          <div className={styles["mission__item"]}>
+          </motion.div>
+          <motion.div
+            className={styles["mission__item"]}
+            variants={MOTION_CHILD_VARIANT}
+          >
             {!mobileSize && (
               <div className={styles.marker}>
                 <div className={styles.square}></div>
@@ -43,8 +70,11 @@ export default function OurMission() {
               to transform the way business is conducted in this region, which
               has far-reaching implications for economic growth
             </div>
-          </div>
-          <div className={styles["mission__item"]}>
+          </motion.div>
+          <motion.div
+            className={styles["mission__item"]}
+            variants={MOTION_CHILD_VARIANT}
+          >
             {!mobileSize && (
               <div className={styles.marker}>
                 <div className={styles.square}></div>
@@ -58,8 +88,8 @@ export default function OurMission() {
               directly from the people who form the foundation of every
               country’s supply chains
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

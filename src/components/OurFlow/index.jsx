@@ -7,18 +7,6 @@ import flow2 from "../../assets/flow2.webp";
 import flow3 from "../../assets/flow3.webp";
 import flow4 from "../../assets/flow4.webp";
 
-const childVariant = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1 },
-};
-
-const MOTION_CONTAINER = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
 export default function OurFlow() {
   const ourFlowRef = useNav("our flow");
   const mobileSize = useMediaQuery("(max-width: 800px)");

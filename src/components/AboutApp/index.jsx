@@ -1,7 +1,7 @@
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import styles from "./AboutApp.module.css";
-import appDemo from "../../assets/app-demo.png";
+import appDemo from "../../assets/app-demo.webp";
 import appBtn from "../../assets/app-btn.png";
 
 export default function AboutApp() {
