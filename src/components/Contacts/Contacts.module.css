@@ -168,7 +168,8 @@
 
 @media (min-width: 1024px) and (max-width: 1536px) {
   .contacts {
-    padding: 25vh 0 0;
+    padding: 15vh 0 0;
+    margin-bottom: 10vh;
   }
 
   .container {

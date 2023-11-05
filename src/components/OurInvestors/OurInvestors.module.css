@@ -44,8 +44,12 @@
   justify-items: start;
 }
 
+.investor {
+  width: 25vw;
+}
+
 .investor__img {
-  width: 120%;
+  width: 100%;
   display: block;
   margin-bottom: 10px;
 }
@@ -69,8 +73,13 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1536px) {
+  .investor {
+    width: auto;
+  }
+
   .investors {
     padding: 5vh 0;
+    margin-bottom: 10vh;
   }
 
   .investors__grid {
@@ -79,13 +88,17 @@
   }
 
   .investor__img {
-    width: 100%;
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .container {
     width: 80%;
+  }
+
+  .investor {
+    width: auto;
   }
 
   .investors {
@@ -96,6 +109,7 @@
   .investors__grid {
     grid-template-columns: minmax(250px, 30vw);
     justify-content: center;
+    row-gap: 35px;
   }
 
   .investors__header {
