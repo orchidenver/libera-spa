@@ -1,10 +1,23 @@
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
+import { motion } from "framer-motion";
 import styles from "./OurFlow.module.css";
 import flow1 from "../../assets/flow1.webp";
 import flow2 from "../../assets/flow2.webp";
 import flow3 from "../../assets/flow3.webp";
 import flow4 from "../../assets/flow4.webp";
+
+const childVariant = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 },
+};
+
+const MOTION_CONTAINER = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 },
+  },
+};
 
 export default function OurFlow() {
   const ourFlowRef = useNav("our flow");
@@ -24,14 +37,30 @@ export default function OurFlow() {
           Connecting the Dots Between Consumers, Brands, and Retail with AI
         </p>
         <div className={styles["flow__container"]}>
-          <img
+          <motion.img
             loading="lazy"
             src={flow1}
             alt="Water example"
             className={styles["flow__img"]}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
           />
-          <div
+          <motion.div
             className={`${styles["flow__text"]} ${styles["flow__text-right"]}`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: "-35%", y: "-50%" },
+              visible: { opacity: 1, x: "-50%", y: "-50%" },
+            }}
           >
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
@@ -45,24 +74,40 @@ export default function OurFlow() {
               from brands and distributors which ensures best deals on the
               market
             </p>
-          </div>
+          </motion.div>
         </div>
         <div
           className={`${styles["flow__container"]} ${
             mobileSize ? "" : styles.reverse
           }`}
         >
-          <img
+          <motion.img
             loading="lazy"
             src={flow2}
             alt="Water example"
             className={styles["flow__img-crop"]}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
           />
 
-          <div
+          <motion.div
             className={`${styles["flow__text"]} ${
               mobileSize ? "" : styles["flow__text-left"]
             }`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: "-65%", y: "-50%" },
+              visible: { opacity: 1, x: "-50%", y: "-50%" },
+            }}
           >
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
@@ -75,17 +120,33 @@ export default function OurFlow() {
               and trustworthy relationships with constantly increasing
               collaboration
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className={styles["flow__container"]}>
-          <img
+          <motion.img
             loading="lazy"
             src={flow3}
             alt="Water example"
             className={styles["flow__img"]}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
           />
-          <div
+          <motion.div
             className={`${styles["flow__text"]} ${styles["flow__text-right"]}`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: "-35%", y: "-50%" },
+              visible: { opacity: 1, x: "-50%", y: "-50%" },
+            }}
           >
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
@@ -98,24 +159,40 @@ export default function OurFlow() {
               identify the trajectory of the consumption to fulfill the needs of
               most of 1 Billion people
             </p>
-          </div>
+          </motion.div>
         </div>
         <div
           className={`${styles["flow__container"]} ${
             mobileSize ? "" : styles.reverse
           }`}
         >
-          <img
+          <motion.img
             loading="lazy"
             src={flow4}
             alt="Water example"
             className={styles["flow__img"]}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
           />
 
-          <div
+          <motion.div
             className={`${styles["flow__text"]} ${
               mobileSize ? "" : styles["flow__text-left"]
             }`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: "-65%", y: "-50%" },
+              visible: { opacity: 1, x: "-50%", y: "-50%" },
+            }}
           >
             <h4
               className={`${styles["flow__description"]} ${styles.subheader}`}
@@ -128,7 +205,7 @@ export default function OurFlow() {
               visible to capital providers which will guarantee an additional
               boost to the retail scene in Emerging Markets
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
