@@ -121,7 +121,8 @@ export default function OurFlow() {
                 <p className={styles.content}>
                   An incentive mechanism created to make an impact and return to
                   the community of our users who form the key pillar of retail
-                  scene. Increase your home takeaway by sharing the sales data
+                  scene in Emerging Markets. Increase your home takeaway by
+                  sharing the sales data
                 </p>
               </div>
             </>
@@ -163,7 +164,8 @@ export default function OurFlow() {
                 <p className={styles.content}>
                   An incentive mechanism created to make an impact and return to
                   the community of our users who form the key pillar of retail
-                  scene. Increase your home takeaway by sharing the sales data
+                  scene in Emerging Markets. Increase your home takeaway by
+                  sharing the sales data
                 </p>
               </motion.div>
             </>
