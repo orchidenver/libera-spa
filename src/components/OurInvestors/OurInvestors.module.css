@@ -82,6 +82,10 @@
     margin-bottom: 10vh;
   }
 
+  .investors__header {
+    margin: 0;
+  }
+
   .investors__grid {
     grid-template-columns: repeat(2, minmax(250px, 30vw));
     gap: 35px;
