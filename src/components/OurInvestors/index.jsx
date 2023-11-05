@@ -4,6 +4,7 @@ import investor1 from "../../assets/investor-1.webp";
 import investor2 from "../../assets/investor-2.webp";
 import investor3 from "../../assets/investor-3.webp";
 import investor4 from "../../assets/investor-4.webp";
+import investor5 from "../../assets/investor-5.webp";
 import investor6 from "../../assets/investor-6.webp";
 
 export default function OurInvestors() {
@@ -22,22 +23,6 @@ export default function OurInvestors() {
           ADVISORS
         </p>
         <div className={styles["investors__grid"]}>
-          <div className={styles.investor}>
-            <img
-              src={investor1}
-              alt="GAINS Associates"
-              className={styles["investor__img"]}
-              loading="lazy"
-            />
-            <a
-              className={styles["investor__description"]}
-              href="https://www.gains-associates.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GAINS Associates
-            </a>
-          </div>
           <div className={styles.investor}>
             <img
               src={investor2}
@@ -72,23 +57,7 @@ export default function OurInvestors() {
           </div>
           <div className={styles.investor}>
             <img
-              src={investor4}
-              alt="Wolfgang Lehmacher (World Economic Forum)"
-              className={styles["investor__img"]}
-              loading="lazy"
-            />
-            <a
-              className={styles["investor__description"]}
-              href="https://www.weforum.org/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              World Economic Forum
-            </a>
-          </div>
-          <div className={styles.investor}>
-            <img
-              src={investor6}
+              src={investor5}
               alt="Asymmetrica Ventures"
               className={styles["investor__img"]}
               loading="lazy"

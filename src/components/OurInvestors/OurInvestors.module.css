@@ -37,14 +37,15 @@
 
 .investors__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 20vw));
+  grid-template-columns: repeat(2, minmax(500px, 40vw));
   place-items: center;
   row-gap: 70px;
   position: relative;
+  justify-items: start;
 }
 
 .investor__img {
-  width: 80%;
+  width: 120%;
   display: block;
   margin-bottom: 10px;
 }

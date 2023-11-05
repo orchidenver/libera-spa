@@ -22,7 +22,6 @@ export default function Contacts() {
               loading="lazy"
             />
             <div className={styles.content}>
-              <h4 className={styles["office__subtitle"]}>head office</h4>
               <h4 className={styles["office__title"]}>
                 united states of america
               </h4>
