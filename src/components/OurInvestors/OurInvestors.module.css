@@ -1,6 +1,6 @@
 .investors {
   padding: 5vh 0;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container {
@@ -92,7 +92,7 @@
   }
 
   .investor__img {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -102,7 +102,7 @@
   }
 
   .investor {
-    width: auto;
+    width: 100%;
   }
 
   .investors {
@@ -129,6 +129,7 @@
     width: 100%;
     text-align: center;
     margin-top: 3vh;
+    font-size: 1rem;
   }
 
   .investor__description {

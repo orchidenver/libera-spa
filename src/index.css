@@ -60,3 +60,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.sc-slide {
+  width: 25vw;
+}
+
+@media screen and (max-width: 800px) {
+  .sc-slide {
+    width: 65vw;
+  }
+}

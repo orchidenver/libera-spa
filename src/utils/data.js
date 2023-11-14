@@ -2,6 +2,10 @@ import photo1 from "../assets/team1.webp";
 import photo2 from "../assets/team2.webp";
 import photo3 from "../assets/team3.webp";
 import photo4 from "../assets/team4.webp";
+import investor2 from "../assets/investor-2.webp";
+import investor3 from "../assets/investor-3.webp";
+import investor5 from "../assets/investor-5.webp";
+import investor6 from "../assets/investor-6.webp";
 
 export const TEAM = [
     {
@@ -39,4 +43,27 @@ export const TEAM = [
 ];
 
 export const navLinks = ["home", "our flow", "libera app", "what we do", "our mission", "our team", "our investors", "contacts"];
+
+export const CAROUSEL_DATA = [
+    {
+        src: investor2,
+        text: "Baltic Sandbox Ventures",
+        href: "https://balticsandbox.ventures/",
+    },
+    {
+        src: investor3,
+        text: "Animoca Brands",
+        href: "https://www.animocabrands.com/",
+    },
+    {
+        src: investor5,
+        text: "Asymmetrica Ventures",
+        href: "#",
+    },
+    {
+        src: investor6,
+        text: "ArtesianVC",
+        href: "https://www.artesianinvest.com/",
+    },
+];
 

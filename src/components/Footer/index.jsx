@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
         <p className={styles.copyright}>
-          {`Copyright © ${new Date().getFullYear()} Libera artificial Intelligence, Inc.`}
+          {`Copyright © ${new Date().getFullYear()} Libera global`}
         </p>
       </div>
     </footer>

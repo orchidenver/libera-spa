@@ -1,12 +1,34 @@
 import { useNav } from "../../hooks/useNav";
+import ScrollCarousel from "scroll-carousel-react";
 import styles from "./OurInvestors.module.css";
-import investor2 from "../../assets/investor-2.webp";
-import investor3 from "../../assets/investor-3.webp";
-import investor5 from "../../assets/investor-5.webp";
-import investor6 from "../../assets/investor-6.webp";
+import { CAROUSEL_DATA } from "../../utils/data";
+
+function investors() {
+  return CAROUSEL_DATA.map((el) => {
+    return (
+      <div className={styles.investor} key={el.text}>
+        <a
+          className={styles["investor__description"]}
+          href={el.href}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={el.src}
+            alt={el.text}
+            className={styles["investor__img"]}
+            loading="lazy"
+          />
+        </a>
+      </div>
+    );
+  });
+}
 
 export default function OurInvestors() {
   const ourInvestorsRef = useNav("our investors");
+  const content = investors();
+
   return (
     <section
       id="ourinvestorsSection"
@@ -20,72 +42,9 @@ export default function OurInvestors() {
           PARTNERSHIPS AND HAVE THE INGENIOUS MINDS AS OUR INVESTORS AND
           ADVISORS
         </p>
-        <div className={styles["investors__grid"]}>
-          <div className={styles.investor}>
-            <img
-              src={investor2}
-              alt="Baltic Sandbox Ventures"
-              className={styles["investor__img"]}
-              loading="lazy"
-            />
-            <a
-              className={styles["investor__description"]}
-              href="https://balticsandbox.ventures/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Baltic Sandbox Ventures
-            </a>
-          </div>
-          <div className={styles.investor}>
-            <img
-              src={investor3}
-              alt="Animoca Brands"
-              className={styles["investor__img"]}
-              loading="lazy"
-            />
-            <a
-              className={styles["investor__description"]}
-              href="https://www.animocabrands.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Animoca Brands
-            </a>
-          </div>
-          <div className={styles.investor}>
-            <img
-              src={investor5}
-              alt="Asymmetrica Ventures"
-              className={styles["investor__img"]}
-              loading="lazy"
-            />
-            <a
-              className={styles["investor__description"]}
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Asymmetrica Ventures
-            </a>
-          </div>
-          <div className={styles.investor}>
-            <img
-              src={investor6}
-              alt="ArtesianVC"
-              className={styles["investor__img"]}
-              loading="lazy"
-            />
-            <a
-              className={styles["investor__description"]}
-              href="https://www.artesianinvest.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ArtesianVC
-            </a>
-          </div>
-        </div>
+        <ScrollCarousel autoplay speed={0} margin={50} autoplaySpeed={1}>
+          {content}
+        </ScrollCarousel>
       </div>
     </section>
   );
