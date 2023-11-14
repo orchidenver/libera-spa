@@ -46,10 +46,10 @@ export default function OurMission() {
             )}
             <div className={styles.number}>1</div>
             <div className={styles.description}>
-              We stive to improve lives and ensure financial inclusion for more
+              We strive to improve lives and ensure financial inclusion for more
               people (100s of millions) than ever before across the emerging
               markets. Using retail data to remove the friction in supply
-              chains, Liber will create a social, financial, and environmental
+              chains, Libera will create a social, financial, and environmental
               change in Emerging Asia
             </div>
           </motion.div>
