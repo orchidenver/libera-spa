@@ -42,7 +42,6 @@
 }
 
 .operation__item {
-  cursor: pointer;
   width: 280px;
   display: flex;
   flex-direction: column;

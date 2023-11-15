@@ -37,7 +37,6 @@
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .office__img {
@@ -188,7 +187,6 @@
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    cursor: pointer;
   }
 
   .office__subtitle {

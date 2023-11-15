@@ -7,12 +7,7 @@ function investors() {
   return CAROUSEL_DATA.map((el) => {
     return (
       <div className={styles.investor} key={el.text}>
-        <a
-          className={styles["investor__description"]}
-          href={el.href}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a className={styles["investor__description"]} href={el.href}>
           <img
             src={el.src}
             alt={el.text}

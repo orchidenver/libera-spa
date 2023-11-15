@@ -42,7 +42,6 @@
 .mission__item {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .mission__item:hover .marker {

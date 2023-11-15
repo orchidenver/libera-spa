@@ -37,7 +37,7 @@ export const TEAM = [
         name: "Mykyta",
         lastName: "Riabukhin",
         position: "Head of Engineering",
-        link: "https://www.linkedin.com/",
+        link: "https://www.linkedin.com/in/nikita-ryabuhin/",
         bio: ["Devoting his entire career to technology since 2012, Nikita is a pro when it comes to product development, project management, data architecture, and application development. He has shown to have a proven ability in creating value for companies by delivering high quality results for IT projects and consulting services in complex cross-cultural and cross-functional environments across finance and startups."]
     }
 ];
@@ -58,7 +58,7 @@ export const CAROUSEL_DATA = [
     {
         src: investor5,
         text: "Asymmetrica Ventures",
-        href: "#",
+        href: "https://asymmetricventures.com/",
     },
     {
         src: investor6,
