@@ -22,6 +22,7 @@ function investors() {
             className={styles["investor__img"]}
             loading="lazy"
           />
+          <div className="swiper-lazy-preloader" />
         </a>
       </SwiperSlide>
     );
