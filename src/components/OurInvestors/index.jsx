@@ -1,5 +1,4 @@
 import { useNav } from "../../hooks/useNav";
-import ScrollCarousel from "scroll-carousel-react";
 import styles from "./OurInvestors.module.css";
 import { CAROUSEL_DATA } from "../../utils/data";
 import { Swiper, SwiperSlide } from "swiper/react";
