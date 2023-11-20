@@ -52,12 +52,12 @@
 
 .text {
   position: absolute;
-  width: 600px;
-  max-width: 50vw;
-  left: 100px;
+  width: 700px;
+  max-width: 60vw;
+  left: 5vw;
   bottom: -10vh;
   color: var(--text-white);
-  font-size: 2vh;
+  font-size: 2.5vh;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
