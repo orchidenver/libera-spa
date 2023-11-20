@@ -2,12 +2,21 @@ import { useNav } from "../../hooks/useNav";
 import ScrollCarousel from "scroll-carousel-react";
 import styles from "./OurInvestors.module.css";
 import { CAROUSEL_DATA } from "../../utils/data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 function investors() {
   return CAROUSEL_DATA.map((el) => {
     return (
-      <div className={styles.investor} key={el.text}>
-        <a className={styles["investor__description"]} href={el.href}>
+      <SwiperSlide className={styles.investor} key={el.text}>
+        <a
+          className={styles["investor__description"]}
+          href={el.href}
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={el.src}
             alt={el.text}
@@ -15,14 +24,39 @@ function investors() {
             loading="lazy"
           />
         </a>
-      </div>
+      </SwiperSlide>
     );
   });
+}
+
+function Slider() {
+  return (
+    <Swiper
+      modules={[Autoplay]}
+      autoplay={{
+        delay: 2000,
+      }}
+      loop={true}
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }}
+    >
+      {investors()}
+    </Swiper>
+  );
 }
 
 export default function OurInvestors() {
   const ourInvestorsRef = useNav("our investors");
   const content = investors();
+  console.log(content);
 
   return (
     <section
@@ -37,9 +71,7 @@ export default function OurInvestors() {
           PARTNERSHIPS AND HAVE THE INGENIOUS MINDS AS OUR INVESTORS AND
           ADVISORS
         </p>
-        <ScrollCarousel autoplay speed={0} margin={50} autoplaySpeed={1}>
-          {content}
-        </ScrollCarousel>
+        <Slider />
       </div>
     </section>
   );

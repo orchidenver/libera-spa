@@ -53,8 +53,8 @@ export default function Hero() {
             <span className="text-gradient">with the power of data</span>
           </h1>
           <p className={styles.text}>
-            Revealing what billions of consumers buy so the right <br />
-            inventory can be ordered, stocked, positioned and delivered
+            Revealing what billions of consumers buy so the right inventory can
+            be ordered, stocked, positioned and delivered
           </p>
         </section>
       </div>
