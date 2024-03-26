@@ -13,7 +13,7 @@ export default function Footer() {
         <div className={styles.media}>
           <div className={styles.item}>
             <a
-              href="https://www.facebook.com/LiberaTechAI/"
+              href="https://www.facebook.com/LiberaGlobal"
               target="_blank"
               rel="noreferrer"
             >
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div className={styles.item}>
             <a
-              href="https://t.me/libera_foundation"
+              href="https://t.me/liberaglobal"
               target="_blank"
               rel="noreferrer"
             >

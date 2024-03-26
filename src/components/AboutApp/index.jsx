@@ -19,13 +19,13 @@ export default function AboutApp() {
         <div className={styles["app__info"]}>
           <h3 className={styles["app__header"]}>LIBERA APP</h3>
           <p className={styles["app__description"]}>
-            An essential tool to strengthen traditional trade with cutting edge
-            technology
+            An ultimate solution to strengthen traditional trade with cutting
+            edge technology
           </p>
           <p className={styles["app__text"]}>
             {mobileSize
-              ? "Revealing what billions of consumers buy so the right inventory can be ordered, stocked, positioned and delivered"
-              : "Our easy-to-use POS and order management system aggregates data directly from brands and distributors, ensures competitive prices and thus better margins. Libera is allowing small entrepreneurs to take advantage of their sales data and increase their take home by up to 100%. Thanks to constantly expanding assortment, we provide store owners with an opportunity to scale their business"}
+              ? "Finance application that enables local shops to grow their business with enhanced tools for inventory management, digital payments, and AI driven data insights"
+              : "Finance application that enables local shops to grow their business with enhanced tools for inventory management, digital payments, and AI driven data insights. With Libera, small businesses can order their stock directly from FMCG agents and distributors, avoiding the trouble of personally buying them from wholesalers at retail prices which guarantees better margins. Moreover, Libera is creating an unprecedented opportunity for entrepreneurs to monetize their sales data and increase their take home."}
           </p>
           <a
             href="https://play.google.com/store/"

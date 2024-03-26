@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 60%;
+  width: 65%;
   max-width: 1450px;
   margin: 0 auto;
 }
@@ -54,7 +54,7 @@
 .operations__img {
   width: 165px;
   filter: opacity(0.6);
-  margin-bottom: 3vh;
+  height: 225px;
 }
 
 .operations__title {
@@ -72,16 +72,22 @@
   margin-bottom: 2vh;
 }
 .operations__list {
-  list-style-image: url("../../assets/bullet.svg");
   margin-top: auto;
+  height: 100px;
+  list-style: none;
 }
 
 .operations__list li {
+  background-image: url("../../assets/bullet.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  padding-left: 30px;
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   color: #fff;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 800px) {
@@ -123,5 +129,7 @@
 
   .operations__img {
     filter: opacity(1);
+    height: auto;
+    margin-bottom: 5vh;
   }
 }

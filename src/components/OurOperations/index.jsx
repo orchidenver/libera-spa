@@ -16,9 +16,9 @@ export default function OurOperations() {
       <div className={styles.container}>
         <h3 className={styles["operations__header"]}>WHAT WE DO</h3>
         <p className={styles["operations__description"]}>
-          Libera is transforming traditional trade in Emerging Markets,
-          acquiring the data directly from the end users with our AI software
-          for demand forecasting and predictable analytics
+          Libera is untapping the largest data layers of retail in Emerging
+          Markets by acquiring data directly from various users for market
+          insights and optimized supply chains
         </p>
         <div className={styles["operations__block"]}>
           <div className={styles["operation__item"]}>
@@ -32,11 +32,9 @@ export default function OurOperations() {
               Recommendation engine
             </h4>
             <ul className={styles["operations__list"]}>
-              <li className={styles.text}>Increase sales</li>
-              <li className={styles.text}>
-                Analyze customer preferences for actionable insights
-              </li>
-              <li className={styles.text}>Reduce waste</li>
+              <li className={styles.text}>Real time analytics</li>
+              <li className={styles.text}>Product recommendations</li>
+              <li className={styles.text}>Increased sales</li>
             </ul>
           </div>
           <div className={styles["operation__item"]}>
@@ -47,14 +45,12 @@ export default function OurOperations() {
               loading="lazy"
             />
             <h4 className={styles["operations__title"]}>
-              Inventory management
+              Inventory & order management
             </h4>
             <ul className={styles["operations__list"]}>
-              <li className={styles.text}>
-                Faster access to a wide variety of products
-              </li>
+              <li className={styles.text}>Variety of purchasing options</li>
               <li className={styles.text}>Complete control of the stock</li>
-              <li className={styles.text}>Access to working capital</li>
+              <li className={styles.text}>Competitive prices</li>
             </ul>
           </div>
           <div className={styles["operation__item"]}>
@@ -64,13 +60,11 @@ export default function OurOperations() {
               className={styles["operations__img"]}
               loading="lazy"
             />
-            <h4 className={styles["operations__title"]}>Predict demand</h4>
+            <h4 className={styles["operations__title"]}>Digitalization</h4>
             <ul className={styles["operations__list"]}>
-              <li className={styles.text}>
-                Increase revenue through product recommendations
-              </li>
-              <li className={styles.text}>Predict Inventory needs</li>
-              <li className={styles.text}>Reduce lost sales</li>
+              <li className={styles.text}>Access to working capital</li>
+              <li className={styles.text}>Data monetization</li>
+              <li className={styles.text}>End-to-end visibility</li>
             </ul>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function OurFlow() {
                 loading="lazy"
                 src={flow1}
                 alt="Water example"
-                className={styles["flow__img"]}
+                className={styles["flow__img-crop"]}
               />
               <div
                 className={`${styles["flow__text"]} ${styles["flow__text-right"]}`}
@@ -42,13 +42,11 @@ export default function OurFlow() {
                   Order and inventory management
                 </h4>
                 <p className={styles.content}>
-                  We offer store owners an opportunity to order directly from
-                  brands and distributors which ensures best deals on the market
-                  With billions of US dollars of inventory produced but never
-                  sold - understanding what is needed and where is key. We offer
-                  store owners an opportunity to follow client’s needs and order
-                  directly from brands and distributors which ensures best deals
-                  on the market
+                  Digital inventory management and online ordering not only
+                  increase efficiency but create a data trail which can be
+                  leveraged for AI implementation. We offer store owners an
+                  opportunity to order inventory directly from brands and
+                  distributors which ensures best deals on the market
                 </p>
               </div>
             </>
@@ -58,7 +56,7 @@ export default function OurFlow() {
                 loading="lazy"
                 src={flow1}
                 alt="Water example"
-                className={styles["flow__img"]}
+                className={`${styles["flow__img-crop"]} ${styles["flip"]}`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -85,11 +83,11 @@ export default function OurFlow() {
                   Order and inventory management
                 </h4>
                 <p className={styles.content}>
-                  With billions of US dollars of inventory produced but never
-                  sold - understanding what is needed and where is key. We offer
-                  store owners an opportunity to follow client’s needs and order
-                  directly from brands and distributors which ensures best deals
-                  on the market
+                  Digital inventory management and online ordering not only
+                  increase efficiency but create a data trail which can be
+                  leveraged for AI implementation. We offer store owners an
+                  opportunity to order inventory directly from brands and
+                  distributors which ensures best deals on the market
                 </p>
               </motion.div>
             </>
@@ -116,13 +114,14 @@ export default function OurFlow() {
                 <h4
                   className={`${styles["flow__description"]} ${styles.subheader}`}
                 >
-                  Data dividend
+                  Micro Incentives
                 </h4>
                 <p className={styles.content}>
-                  An incentive mechanism created to make an impact and return to
-                  the community of our users who form the key pillar of retail
-                  scene in Emerging Markets. Increase your home takeaway by
-                  sharing the sales data
+                  Users can now capitalize on their sales data and open
+                  additional features like dashboards or monthly analytics by
+                  simply using our app. Libera strives to make an impact and
+                  return to the community of our users who form the key pillar
+                  of retail scene in Emerging Markets
                 </p>
               </div>
             </>
@@ -159,13 +158,14 @@ export default function OurFlow() {
                 <h4
                   className={`${styles["flow__description"]} ${styles.subheader}`}
                 >
-                  Data dividend
+                  Micro Incentives
                 </h4>
                 <p className={styles.content}>
-                  An incentive mechanism created to make an impact and return to
-                  the community of our users who form the key pillar of retail
-                  scene in Emerging Markets. Increase your home takeaway by
-                  sharing the sales data
+                  Users can now capitalize on their sales data and open
+                  additional features like dashboards or monthly analytics by
+                  simply using our app. Libera strives to make an impact and
+                  return to the community of our users who form the key pillar
+                  of retail scene in Emerging Markets
                 </p>
               </motion.div>
             </>
@@ -178,7 +178,7 @@ export default function OurFlow() {
                 loading="lazy"
                 src={flow3}
                 alt="Water example"
-                className={styles["flow__img"]}
+                className={styles["flow__img-crop"]}
               />
               <div
                 className={`${styles["flow__text"]} ${styles["flow__text-right"]}`}
@@ -186,13 +186,15 @@ export default function OurFlow() {
                 <h4
                   className={`${styles["flow__description"]} ${styles.subheader}`}
                 >
-                  Increased sales
+                  Digital transactions
                 </h4>
                 <p className={styles.content}>
-                  By acquiring sales data directly from the POS, we can forecast
-                  demand for small entrepreneurs and big brands. This allows us
-                  to identify the trajectory of the consumption to fulfill the
-                  needs of most of 1 Billion people
+                  With billions of US dollars of inventory produced but never
+                  sold - understanding what is needed and where is key. By
+                  applying AI to sales and distribution data, we can build
+                  visibility across the entire supply chain and forecast demand
+                  for both small entrepreneurs and big brands which enables them
+                  to better manage their client’s needs
                 </p>
               </div>
             </>
@@ -202,7 +204,7 @@ export default function OurFlow() {
                 loading="lazy"
                 src={flow3}
                 alt="Water example"
-                className={styles["flow__img"]}
+                className={styles["flow__img-crop"]}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -226,13 +228,15 @@ export default function OurFlow() {
                 <h4
                   className={`${styles["flow__description"]} ${styles.subheader}`}
                 >
-                  Increased sales
+                  Digital transactions
                 </h4>
                 <p className={styles.content}>
-                  By acquiring sales data directly from the POS, we can forecast
-                  demand for small entrepreneurs and big brands. This allows us
-                  to identify the trajectory of the consumption to fulfill the
-                  needs of most of 1 Billion people
+                  With billions of US dollars of inventory produced but never
+                  sold - understanding what is needed and where is key. By
+                  applying AI to sales and distribution data, we can build
+                  visibility across the entire supply chain and forecast demand
+                  for both small entrepreneurs and big brands which enables them
+                  to better manage their client’s needs
                 </p>
               </motion.div>
             </>
@@ -249,7 +253,7 @@ export default function OurFlow() {
                 loading="lazy"
                 src={flow4}
                 alt="Water example"
-                className={styles["flow__img"]}
+                className={styles["flow__img-crop"]}
               />
 
               <div
@@ -260,13 +264,15 @@ export default function OurFlow() {
                 <h4
                   className={`${styles["flow__description"]} ${styles.subheader}`}
                 >
-                  Financing
+                  Embedded finance
                 </h4>
                 <p className={styles.content}>
-                  Many store owners lack access to much needed working capital
-                  for their day-to-day needs. Thanks to Libera – every shop will
-                  become visible to capital providers which will guarantee an
-                  additional boost to the retail scene in Emerging Markets
+                  Despite many Mom-and-Pop shops providing credit to their
+                  customers, very few actually have the access to working
+                  capital needed to buy new inventory or expand the existing
+                  one. Libera is using store data to eliminate risk for capital
+                  providers, while nurturing a burgeoning Fintech environment
+                  and ensuring a rapid growth of Emerging Markets retail scene
                 </p>
               </div>
             </>
@@ -276,7 +282,7 @@ export default function OurFlow() {
                 loading="lazy"
                 src={flow4}
                 alt="Water example"
-                className={styles["flow__img"]}
+                className={styles["flow__img-crop"]}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -303,13 +309,15 @@ export default function OurFlow() {
                 <h4
                   className={`${styles["flow__description"]} ${styles.subheader}`}
                 >
-                  Financing
+                  Embedded finance
                 </h4>
                 <p className={styles.content}>
-                  Many store owners lack access to much needed working capital
-                  for their day-to-day needs. Thanks to Libera – every shop will
-                  become visible to capital providers which will guarantee an
-                  additional boost to the retail scene in Emerging Markets
+                  Despite many Mom-and-Pop shops providing credit to their
+                  customers, very few actually have the access to working
+                  capital needed to buy new inventory or expand the existing
+                  one. Libera is using store data to eliminate risk for capital
+                  providers, while nurturing a burgeoning Fintech environment
+                  and ensuring a rapid growth of Emerging Markets retail scene
                 </p>
               </motion.div>
             </>

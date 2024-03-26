@@ -11,7 +11,7 @@
 }
 
 .container {
-  width: 60%;
+  width: 65%;
   max-width: 1450px;
   margin: 0 auto;
 }
@@ -77,6 +77,13 @@
   height: 40vw;
 }
 
+.app__link {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
 @media (min-width: 1280px) and (max-width: 1536px) {
   .app__header {
     font-size: 3rem;
@@ -127,7 +134,7 @@
   }
 
   .app__link {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-top: 3vh;

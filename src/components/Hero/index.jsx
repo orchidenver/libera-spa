@@ -49,12 +49,13 @@ export default function Hero() {
       <div className={styles.container}>
         <section>
           <h1 className={styles["hero-header"]}>
-            Building the future of small retail{" "}
-            <span className="text-gradient">with the power of data</span>
+            Making invisible commerce visible{" "}
+            <span className="text-gradient">with the power of AI</span>
           </h1>
           <p className={styles.text}>
-            Revealing what billions of consumers buy so the right inventory can
-            be ordered, stocked, positioned and delivered
+            Transform your retail strategy and unlock the power of data:
+            Libera's AI-Powered Platform Maximizes Operational Efficiency with
+            Data Driven Insights
           </p>
         </section>
       </div>

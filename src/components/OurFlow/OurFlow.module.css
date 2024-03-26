@@ -3,7 +3,7 @@
 }
 
 .container {
-  width: 60%;
+  width: 65%;
   max-width: 1450px;
   margin: 0 auto;
 }
@@ -55,6 +55,10 @@ h4.flow__description.subheader::before {
 .flow__img-crop {
   width: 600px;
   height: 400px;
+}
+
+.flip {
+  transform: scaleX(-1) !important;
 }
 
 .flow__text {
