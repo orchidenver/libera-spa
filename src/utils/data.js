@@ -2,6 +2,7 @@ import photo1 from "../assets/team1.webp";
 import photo2 from "../assets/team2.webp";
 import photo3 from "../assets/team3.webp";
 import photo4 from "../assets/team4.webp";
+import photo5 from "../assets/team5.webp";
 import investor2 from "../assets/investor-2.webp";
 import investor3 from "../assets/investor-3.webp";
 import investor5 from "../assets/investor-5.webp";
@@ -20,7 +21,7 @@ export const TEAM = [
         photo: photo2,
         name: "Ashri",
         lastName: "Husaeni",
-        position: "Head of Indonesia Operations",
+        position: "Indonesia Operations",
         link: "https://www.linkedin.com/in/ashrihusaeni/",
         bio: ["Experienced Logistics Operations Executive with a combination of tech and managerial experience. Ashri is passionate about delivering the highest quality solutions to Southeast Asia. Skilled in operations management, solution selling, strategic planning, transportation, and warehouse management systems. He has extensive experience in software implementation for logistics industry operations and an MBA in Strategic Management."]
     },
@@ -39,6 +40,14 @@ export const TEAM = [
         position: "Head of Engineering",
         link: "https://www.linkedin.com/in/nikita-ryabuhin/",
         bio: ["Devoting his entire career to technology since 2012, Nikita is a pro when it comes to product development, project management, data architecture, and application development. He has shown to have a proven ability in creating value for companies by delivering high quality results for IT projects and consulting services in complex cross-cultural and cross-functional environments across finance and startups."]
+    },
+    {
+        photo: photo5,
+        name: "Omid",
+        lastName: "Pakseresht",
+        position: "CPO",
+        link: "https://www.linkedin.com/in/omidpakseresht/",
+        bio: ["With a long history in product management, fintech, and data solutions, Omid doesn’t just provide technical insights to the team; he builds products where technology meets real-world solutions. Working teams of 15+ engineers, analysts, and data scientists, he has led the research and development of an array of solutions and data-focused products including at Record Plc., Clear AI, and Dyad."]
     }
 ];
 

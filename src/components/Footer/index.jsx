@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div className={styles.item}>
             <a
-              href="https://twitter.com/LIBERA_GLOBAL?t=s64jqugzj6B-AsI4ipH-PQ&s=08"
+              href="https://twitter.com/LIBERA_GLOBALAI"
               target="_blank"
               rel="noreferrer"
             >

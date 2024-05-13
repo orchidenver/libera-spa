@@ -113,11 +113,9 @@
 
   .team {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2vh;
-    gap: 1vw;
   }
 
   .team__header {
@@ -127,6 +125,11 @@
     font-weight: 500;
     line-height: 104.96%;
     text-align: center;
+  }
+
+  .team__member {
+    display: flex !important;
+    justify-content: center;
   }
 
   .description-wrapper {

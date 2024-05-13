@@ -5,6 +5,11 @@ import styles from "./OurTeam.module.css";
 import { useState } from "react";
 import Modal from "../Modal";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+
 export default function OurTeam() {
   const [toggleModal, setToggleModal] = useState(false);
   const [modalContent, setModalContent] = useState(null);
@@ -27,17 +32,43 @@ export default function OurTeam() {
         </div>
 
         <div className={styles.team}>
-          {TEAM.map((member) => (
-            <Card
-              key={member.lastName}
-              photo={member.photo}
-              name={member.name}
-              lastName={member.lastName}
-              position={member.position}
-              link={member.link}
-              onClickCardHandler={() => onModalHandler(member)}
-            />
-          ))}
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2000,
+            }}
+            loop={true}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              800: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1360: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+          >
+            {TEAM.map((member) => (
+              <SwiperSlide
+                className={styles["team__member"]}
+                key={member.lastName}
+              >
+                <Card
+                  photo={member.photo}
+                  name={member.name}
+                  lastName={member.lastName}
+                  position={member.position}
+                  link={member.link}
+                  onClickCardHandler={() => onModalHandler(member)}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <Modal
