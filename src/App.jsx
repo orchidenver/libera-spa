@@ -10,6 +10,7 @@ import Contacts from "./components/Contacts";
 import OurOperations from "./components/OurOperations";
 import Footer from "./components/Footer";
 import OurCapabilities from "./components/OurCapabilities";
+import Token from "./components/Token";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Hero />
         <AboutApp />
         <OurOperations />
+        <Token />
         <OurCapabilities />
         <OurMission />
         <OurTeam />

@@ -32,7 +32,7 @@ export default function Contacts() {
                   className={styles.icon}
                   loading="lazy"
                 />
-                <span className="address">
+                <span className={styles.address}>
                   600 Congress Ave, Austin, TX 78701
                 </span>
               </div>

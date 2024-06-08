@@ -105,6 +105,14 @@
     height: auto;
   }
 
+  .address {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #fff;
+  }
+
   .container {
     width: 80%;
     max-width: 1450px;
