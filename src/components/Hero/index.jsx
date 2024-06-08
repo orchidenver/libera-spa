@@ -53,9 +53,9 @@ export default function Hero() {
             <span className="text-gradient">with the power of AI</span>
           </h1>
           <p className={styles.text}>
-            Transform your retail strategy and unlock the power of data:
-            Libera's AI-Powered Platform Maximizes Operational Efficiency with
-            Data Driven Insights
+            Revolutionizing the retail landscape in emerging markets by
+            incentivizing data sharing and empowering small merchants with
+            AI-powered tools
           </p>
         </section>
       </div>

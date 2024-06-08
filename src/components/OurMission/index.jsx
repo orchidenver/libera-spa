@@ -46,11 +46,10 @@ export default function OurMission() {
             )}
             <div className={styles.number}>1</div>
             <div className={styles.description}>
-              We strive to improve lives and ensure financial inclusion for more
-              people (100s of millions) than ever before across the emerging
-              markets. Using retail data to remove the friction in supply
-              chains, Libera will create a social, financial, and environmental
-              change in Emerging Asia
+              Libera is creating a social, financial, and environmental impact
+              in Emerging Asia by providing micro retailers with the knowledge
+              and technology to leverage their data and strengthen local
+              communities
             </div>
           </motion.div>
           <motion.div
@@ -64,11 +63,10 @@ export default function OurMission() {
             )}
             <div className={styles.number}>2</div>
             <div className={styles.description}>
-              Libera aims to bridge a crucial gap in data visibility for small
-              mom-and-pop shops that form the backbone of daily commerce. By
-              enabling digital transactions and data insights, Libera is poised
-              to transform the way business is conducted in this region, which
-              has far-reaching implications for economic growth
+              We are transforming the retail landscape in emerging markets by
+              leveraging AI and blockchain technology to digitize small stores,
+              seize billions of uncaptured transactions and bridge data streams
+              to create a comprehensive view of the ecosystem
             </div>
           </motion.div>
           <motion.div
@@ -82,11 +80,10 @@ export default function OurMission() {
             )}
             <div className={styles.number}>3</div>
             <div className={styles.description}>
-              Libera offers a B2B solution to solve problems that plague large
-              enterprises whose goods travel through Emerging Markets — by
-              creating a provenance trail supported by validated data reported
-              directly from the people who form the foundation of every
-              country’s supply chains
+              The Libera Global AI ecosystem includes a secure data-sharing
+              platform, a micro-incentive system for merchants and consumers,
+              and a suite of AI-powered analytics tools for brands and
+              retailers, creating a virtuous cycle of growth and value creation
             </div>
           </motion.div>
         </motion.div>

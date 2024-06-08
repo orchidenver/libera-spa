@@ -29,6 +29,7 @@
 .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
 }
@@ -46,7 +47,7 @@
   font-weight: 500;
   line-height: 104.96%; /* 73.472px */
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .app__description {
@@ -61,9 +62,15 @@
   -webkit-background-clip: text;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 2.5rem;
 }
 
-.app__text {
+.app__features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   color: var(--text-white);
   font-style: normal;
   font-weight: 300;
@@ -72,9 +79,40 @@
   margin: 1rem 0;
 }
 
+.app__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__unit img {
+  width: auto;
+  height: 10vh;
+  margin-bottom: 20px;
+  filter: hue-rotate(30deg) drop-shadow(0px 0px 15px #ffffff);
+}
+
+.app__unit img:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -moz-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+}
+
+.app__unit div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
 .app__img {
-  width: 40vw;
-  height: 40vw;
+  width: 50%;
+  height: 50%;
 }
 
 .app__link {
@@ -93,14 +131,14 @@
     font-size: 1.5rem;
   }
 
-  .app__text {
+  .app__features {
     font-size: 0.85rem;
     width: 90%;
   }
 
   .app__img {
-    width: 35vw;
-    height: 35vw;
+    width: 50%;
+    height: 50%;
   }
 }
 
@@ -121,16 +159,32 @@
   .app__header {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 3vh;
   }
 
   .app__description {
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 4vh;
   }
 
-  .app__text {
+  .app__features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    color: var(--text-white);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
     font-size: 0.85rem;
     text-align: center;
+    margin: 1rem 0;
+  }
+
+  .app__info {
+    margin-bottom: 3vh;
   }
 
   .app__link {
@@ -140,8 +194,13 @@
     margin-top: 3vh;
   }
 
+  .app__unit img {
+    width: auto;
+    height: 7vh;
+  }
+
   .app__img {
     width: auto;
-    height: 50vh;
+    height: 40vh;
   }
 }
