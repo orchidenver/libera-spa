@@ -79,29 +79,48 @@
   margin: 1rem 0;
 }
 
-.app__features .app__unit {
-  animation: FadeIn 1s ease-in-out;
-  animation-fill-mode: both;
-}
-
-.app__features .app__unit:nth-child(1) {
-  animation-delay: 0.5s;
-}
-.app__features .app__unit:nth-child(2) {
-  animation-delay: 1s;
-}
-.app__features .app__unit:nth-child(3) {
-  animation-delay: 1.5s;
-}
-.app__features .app__unit:nth-child(4) {
-  animation-delay: 2s;
-}
-
 .app__unit {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.animate1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: FadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+.animate2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: FadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.animate3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: FadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+.animate4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: FadeIn 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 2s;
 }
 
 .app__unit img {
@@ -112,6 +131,70 @@
 }
 
 .app__unit img:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -moz-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+}
+
+.animate1 img {
+  width: auto;
+  height: 10vh;
+  margin-bottom: 20px;
+  filter: hue-rotate(30deg) drop-shadow(0px 0px 15px #ffffff);
+}
+
+.animate2 img {
+  width: auto;
+  height: 10vh;
+  margin-bottom: 20px;
+  filter: hue-rotate(30deg) drop-shadow(0px 0px 15px #ffffff);
+}
+
+.animate3 img {
+  width: auto;
+  height: 10vh;
+  margin-bottom: 20px;
+  filter: hue-rotate(30deg) drop-shadow(0px 0px 15px #ffffff);
+}
+
+.animate4 img {
+  width: auto;
+  height: 10vh;
+  margin-bottom: 20px;
+  filter: hue-rotate(30deg) drop-shadow(0px 0px 15px #ffffff);
+}
+
+.animate1 img:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -moz-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+}
+
+.animate2 img:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -moz-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+}
+
+.animate3 img:hover {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+  -moz-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
+    drop-shadow(0px 0px 15px #01c5ff);
+}
+
+.animate4 img:hover {
   filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)
     drop-shadow(0px 0px 15px #01c5ff);
   -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(150deg)

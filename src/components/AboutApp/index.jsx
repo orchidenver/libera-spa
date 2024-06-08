@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState } from "react";
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { Tooltip } from "react-tooltip";
@@ -10,8 +11,19 @@ import unitImg3 from "../../assets/lib_app_img_3.svg";
 import unitImg4 from "../../assets/lib_app_img_4.svg";
 
 export default function AboutApp() {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef();
   const liberaAppRef = useNav("libera app");
   const mobileSize = useMediaQuery("(max-width: 800px)");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setVisible(entry.isIntersecting);
+    });
+
+    observer.observe(ref.current);
+  }, []);
 
   return (
     <section id="liberaappSection" className={styles.app} ref={liberaAppRef}>
@@ -21,14 +33,14 @@ export default function AboutApp() {
           mobileSize ? styles.col : styles.row
         }`}
       >
-        <div className={styles["app__info"]}>
+        <div className={styles["app__info"]} ref={ref}>
           <h3 className={styles["app__header"]}>LIBERA APP</h3>
           <p className={styles["app__description"]}>
             An essential tool to strengthen traditional trade with cutting edge
             technology
           </p>
-          <p className={styles["app__features"]}>
-            <div className={styles["app__unit"]}>
+          <div className={styles["app__features"]}>
+            <div className={visible ? styles.animate1 : styles["app__unit"]}>
               <img
                 src={unitImg1}
                 alt="Order management"
@@ -36,7 +48,7 @@ export default function AboutApp() {
                 data-tooltip-content="Access to good deals"
               />
             </div>
-            <div className={styles["app__unit"]}>
+            <div className={visible ? styles.animate2 : styles["app__unit"]}>
               <img
                 src={unitImg2}
                 alt="Digital payments"
@@ -44,7 +56,7 @@ export default function AboutApp() {
                 data-tooltip-content="Digital payments"
               />
             </div>
-            <div className={styles["app__unit"]}>
+            <div className={visible ? styles.animate3 : styles["app__unit"]}>
               <img
                 src={unitImg3}
                 alt="AI insights"
@@ -52,7 +64,7 @@ export default function AboutApp() {
                 data-tooltip-content="Сonversational Assistant"
               />
             </div>
-            <div className={styles["app__unit"]}>
+            <div className={visible ? styles.animate4 : styles["app__unit"]}>
               <img
                 src={unitImg4}
                 alt="Financial services"
@@ -60,7 +72,7 @@ export default function AboutApp() {
                 data-tooltip-content="Micro credit"
               />
             </div>
-          </p>
+          </div>
           <a
             href="https://play.google.com/store/"
             className={styles["app__link"]}
