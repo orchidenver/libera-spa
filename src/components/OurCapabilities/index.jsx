@@ -9,7 +9,7 @@ import flow4 from "../../assets/flow4.webp";
 import aiassistant from "../../assets/aiassistant.webp";
 
 export default function OurCapabilities() {
-  const ourCapRef = useNav("our flow");
+  const ourCapRef = useNav("our capabilities");
   const mobileSize = useMediaQuery("(max-width: 800px)");
 
   return (
@@ -17,7 +17,7 @@ export default function OurCapabilities() {
       <div className={mobileSize ? "" : styles.container}>
         <h3
           className={styles["flow__header"]}
-          id="ourCapSection"
+          id="ourcapabilitiesSection"
           ref={ourCapRef}
         >
           our capabilities
