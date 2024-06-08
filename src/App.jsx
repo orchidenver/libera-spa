@@ -17,7 +17,7 @@ function App() {
     <div className="app">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Libera</title>
+        <title>Libera Global AI</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Helmet>
@@ -25,7 +25,7 @@ function App() {
           name="description"
           content="Building the future of small retail with the power of data"
         />
-        <title>Libera - Homepage</title>
+        <title>Libera Global AI - Homepage</title>
         <meta
           name="keywords"
           content="libera, ai, retail, technology, Indonesia, supply, logistics"

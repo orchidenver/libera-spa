@@ -351,7 +351,7 @@ export default function OurCapabilities() {
                 loading="lazy"
                 src={flow4}
                 alt="Water example"
-                className={`${styles["flow__img-crop"]} ${styles["flip"]}`}
+                className={styles["flow__img-crop"]}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
