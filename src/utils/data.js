@@ -7,6 +7,8 @@ import investor2 from "../assets/investor-2.webp";
 import investor3 from "../assets/investor-3.webp";
 import investor5 from "../assets/investor-5.webp";
 import investor6 from "../assets/investor-6.webp";
+import investor7 from "../assets/investor-7.webp";
+import investor8 from "../assets/investor-8.webp";
 
 export const TEAM = [
     {
@@ -73,6 +75,16 @@ export const CAROUSEL_DATA = [
         src: investor6,
         text: "ArtesianVC",
         href: "https://www.artesianinvest.com/",
+    },
+    {
+        src: investor7,
+        text: "Singularity DAO",
+        href: "https://www.singularitydao.ai/",
+    },
+    {
+        src: investor8,
+        text: "Poolz Finance",
+        href: "https://www.poolz.finance/",
     },
 ];
 
