@@ -5,7 +5,7 @@ header {
   text-align: center;
   padding: 2rem 0;
   height: 20vh;
-  z-index: 2;
+  z-index: 25;
   display: flex;
   width: 100vw;
 }
