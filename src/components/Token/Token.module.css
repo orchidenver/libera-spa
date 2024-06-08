@@ -63,6 +63,7 @@
   z-index: 20;
   width: auto;
   height: 30vh;
+  animation: pulse infinite 1s ease-in-out alternate;
 }
 
 .token__img-small {
@@ -71,6 +72,8 @@
   top: -25vh;
   width: auto;
   height: 20vh;
+  animation: pulse infinite 1s ease-in-out alternate;
+  animation-delay: 0.3s;
 }
 
 .tokens {
@@ -78,6 +81,87 @@
 }
 
 @media screen and (max-width: 800px) {
+  .token {
+    height: 20vh;
+    margin: 0;
+    padding: 7vh 0;
+    display: flex;
+    align-items: center;
+    background: url("../../assets/token-bg.webp") no-repeat 50% 0%;
+    background-size: cover;
+    position: relative;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+
+  .token__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .token__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .token__imgs {
+    display: flex;
+    position: relative;
+    order: 3;
+  }
+
+  .token__img-big {
+    position: static;
+    width: auto;
+    height: 12vh;
+  }
+
+  .token__animation {
+    position: static;
+    width: auto;
+    height: 12vh;
+    animation: roll-in 2s ease;
+  }
+
+  .token__img-small {
+    display: none;
+  }
+
+  .token__link {
+    width: 125px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+}
+
+@keyframes roll-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* @media screen and (max-width: 800px) {
   .token {
     height: 100vh;
   }
@@ -128,4 +212,4 @@
     height: 75px;
     font-size: 1.5rem;
   }
-}
+} */

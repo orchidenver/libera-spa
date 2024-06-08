@@ -245,6 +245,10 @@
 
 @media screen and (max-width: 800px) {
   .app {
+    height: 100svh;
+  }
+
+  .app {
     display: block;
     padding: 7vh 0;
   }
@@ -302,7 +306,7 @@
 
   .app__img {
     width: auto;
-    height: 40vh;
+    height: 35vh;
   }
 }
 
