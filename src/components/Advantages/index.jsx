@@ -1,15 +1,15 @@
 import { useNav } from "../../hooks/useNav";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import styles from "./OurCapabilities.module.css";
+import styles from "./Advantages.module.css";
 import flow1 from "../../assets/flow1.webp";
 import flow2 from "../../assets/flow2.webp";
 import flow3 from "../../assets/flow3.webp";
 import flow4 from "../../assets/flow4.webp";
 import aiassistant from "../../assets/aiassistant.webp";
 
-export default function OurCapabilities() {
-  const ourCapRef = useNav("our capabilities");
+export default function Advantages() {
+  const ourCapRef = useNav("advantages");
   const mobileSize = useMediaQuery("(max-width: 800px)");
 
   return (
@@ -17,10 +17,10 @@ export default function OurCapabilities() {
       <div className={mobileSize ? "" : styles.container}>
         <h3
           className={styles["flow__header"]}
-          id="ourcapabilitiesSection"
+          id="advantagesSection"
           ref={ourCapRef}
         >
-          our capabilities
+          advantages
         </h3>
         <p className={styles["flow__description"]}>
           Connecting the Dots Between Consumers, Brands, and Retail with AI

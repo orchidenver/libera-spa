@@ -9,7 +9,7 @@ import OurMission from "./components/OurMission";
 import Contacts from "./components/Contacts";
 import OurOperations from "./components/OurOperations";
 import Footer from "./components/Footer";
-import OurCapabilities from "./components/OurCapabilities";
+import Advantages from "./components/Advantages";
 import Token from "./components/Token";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         <AboutApp />
         <OurOperations />
         <Token />
-        <OurCapabilities />
+        <Advantages />
         <OurMission />
         <OurTeam />
         <OurInvestors />
