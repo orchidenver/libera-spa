@@ -13,7 +13,7 @@ export default function Footer() {
         <div className={styles.media}>
           <div className={styles.item}>
             <a
-              href="https://www.facebook.com/LiberaGlobal"
+              href="https://www.facebook.com/LiberaGlobalAI"
               target="_blank"
               rel="noreferrer"
             >
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <div className={styles.item}>
             <a
-              href="https://www.linkedin.com/company/31540905/admin/feed/posts/"
+              href="https://www.linkedin.com/company/liberaglobalai"
               target="_blank"
               rel="noreferrer"
             >

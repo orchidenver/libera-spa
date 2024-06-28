@@ -1,4 +1,5 @@
 import { useNav } from "../../hooks/useNav";
+import video from "../../assets/hero-video-mob.webm";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -6,6 +7,16 @@ export default function Hero() {
   return (
     <aside className={styles.hero} id="homeSection" ref={homePageRef}>
       <div className={styles["hero-bg"]}></div>
+      {/* <video autoPlay muted loop className={styles["hero-bg"]}>
+        <source src={video} type="video/mp4" />
+      </video> */}
+      {/* <iframe
+        className={styles["bg-video"]}
+        src="https://www.youtube.com/embed/nyWFX9qsmbM?autoplay=1&mute=1&controls=0&loop=1&playlist=nyWFX9qsmbM"
+        allowFullScreen
+        allow="autoplay"
+        frameBorder={0}
+      /> */}
       <div className={styles["hero-overlay"]}>
         <div className={styles.grids}>
           <div className={styles.grid}></div>
