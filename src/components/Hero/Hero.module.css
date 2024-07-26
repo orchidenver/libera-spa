@@ -4,23 +4,19 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: url("../../assets/hero-bg.webp") no-repeat 25% 15% fixed;
+  /* background: url("../../assets/hero-bg.webp") no-repeat 25% 15% fixed; */
   background-size: cover;
   position: relative;
 }
 
 .bg-video {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   background-size: cover;
   background: no-repeat center;
-  /* margin-left: 50vw; */
   user-select: none;
   pointer-events: none;
-
-  /*custom styles, for example grayscale appearance*/
-  filter: grayscale(0.8);
 
   /*additional tweaks for positioning, read more in the link above*/
   height: 100%;
@@ -36,7 +32,9 @@
 }
 
 .container section {
-  position: relative;
+  position: absolute;
+  top: 50px;
+  right: 20vw;
 }
 
 .hero-bg {
@@ -60,14 +58,14 @@
 .hero-header {
   color: var(--text-white);
   text-transform: uppercase;
-  font-size: 6vh;
+  font-size: 3.5vh;
   font-style: normal;
   font-weight: 500;
   line-height: 104.96%;
-  width: 730px;
+  width: 60vw;
   max-width: 60vw;
   position: relative;
-  animation: slide-left 2s ease-in-out;
+  animation: slide-top 2s ease-in-out;
 }
 
 .text {
@@ -293,11 +291,11 @@
   }
 }
 
-@keyframes slide-left {
+@keyframes slide-top {
   0% {
     opacity: 0;
     filter: blur(4px);
-    transform: translateX(-150px);
+    transform: translatey(-150px);
   }
   100% {
     opacity: 1;
