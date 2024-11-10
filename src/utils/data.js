@@ -20,14 +20,6 @@ export const TEAM = [
         bio: ["Leading our team is Max Ward – our founder and a true citizen of SEA who has spent 20 years in various countries of the region, studying the markets, opportunities and most importantly people.", "Max is a strong believer in the potential of emerging countries. With over a decade’s worth of experience in the Asia-Pacific region, Max has led new development strategies focusing on the global application of Artificial Intelligence and machine learning to build more efficient and sustainable supply chains.", "Throughout his career path, he has worked for major global players, such as DHL, where he facilitated in achieving DHL’s global goals and contributed to the development of new strategies. This experience has influenced him to start his own business."]
     },
     {
-        photo: photo2,
-        name: "Ashri",
-        lastName: "Husaeni",
-        position: "Indonesia Operations",
-        link: "https://www.linkedin.com/in/ashrihusaeni/",
-        bio: ["Experienced Logistics Operations Executive with a combination of tech and managerial experience. Ashri is passionate about delivering the highest quality solutions to Southeast Asia. Skilled in operations management, solution selling, strategic planning, transportation, and warehouse management systems. He has extensive experience in software implementation for logistics industry operations and an MBA in Strategic Management."]
-    },
-    {
         photo: photo3,
         name: "Maria",
         lastName: "Slavianinova",
